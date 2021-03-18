@@ -1,4 +1,8 @@
-# Browser Technologies @cmda-minor-web 20-21
+# Minor WDD Enquête
+
+_Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
+
+<!-- # Browser Technologies @cmda-minor-web 20-21
 
 //Robuuste, toegankelijke websites ontwerpen en maken …
 
@@ -18,7 +22,7 @@ Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
 
 ### Opdracht 2 💔 Breek het Web
 
-Voor opdracht 2 ga je proberen het Web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken? 
+Voor opdracht 2 ga je proberen het Web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
 
 - [Opdracht 2 - Breek het Web](course/Opdracht2.md)
 
@@ -114,7 +118,7 @@ Woensdag krijg je een briefing van de eindopdracht en een college over browsers,
 
 #### Donderdag 18 maart
 
-Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.  
+Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.
 
 🤟 Vandaag geeft [Heydon Pickering](https://heydonworks.com) een gastcollege om 14:00. Heydon Pickering is een web developer, hij geeft lezingen en schrijft over toegankelijkeid en web design o.a. voor [Smashing Magazin](https://www.smashingmagazine.com/author/heydon-pickering/). Vorige week heb je een metafoor voor PE bedacht naar aanleiding van een filmpje van Hedon Pickering zelf. Hij komt vandaag langs! Wat wil je hem vragen over het web?
 
@@ -193,7 +197,7 @@ In week 4 wordt de eindopdracht beoordeeld. Dan gaan we je werk bekijken, bespre
 
 | Donderdag 1/4 | Wat  |
 |---|---|
-| 14:00 | [Weekly Nerd 2️⃣](https://github.com/cmda-minor-web/weekly-nerd-2021)|
+| 14:00 | [Weekly Nerd 2️⃣](https://github.com/cmda-minor-web/weekly-nerd-2021)| -->
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
