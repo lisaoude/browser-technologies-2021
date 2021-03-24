@@ -11,10 +11,10 @@ const resultRoutes = require('./routes/resultRoutes')
 
 // Internals
 const PORT = process.env.PORT || 3000;
+const dbURI = process.env.DBURI;
 
 
 // Connect to mongoDB
-const dbURI = 'mongodb+srv://lisaoude:ditiseenwwvoormongodb123@wddenquete.zjrzb.mongodb.net/WDDEnquete?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(PORT), console.log(`App is launched on http://localhost:${PORT}`))
   .catch((err) => console.log(err));
