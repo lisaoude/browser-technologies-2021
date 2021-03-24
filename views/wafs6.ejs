@@ -1,0 +1,17 @@
+<%- include('./partials/head.ejs') %>
+
+  <%- include('./partials/nav.ejs') %>
+    <%- include('./partials/header.ejs') %>
+
+      <%- include('./partials/titlewafs.ejs') %>
+
+        <h3>Wat voor cijfer geef je het vak?</h3>
+        <form action='submit' method='post'>
+
+          <input type='number' id='PWAcijfer' name='PWAcijfer' min='1' max='10'>
+
+          <%- include('./partials/button.ejs') %>
+
+        </form>
+
+        <%- include('./partials/footer.ejs') %>

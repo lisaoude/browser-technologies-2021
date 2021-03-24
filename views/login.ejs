@@ -1,0 +1,23 @@
+<%- include('./partials/head.ejs') %>
+
+  <%- include('./partials/nav.ejs') %>
+    <%- include('./partials/header.ejs') %>
+
+      <form action='/results' method='POST'>
+        <label for='naam'>Naam</label>
+        <input type='text' id='naam' name='naam' required>
+
+        <label for='studentnummer'>Studentnummer</label>
+        <input type='text' id='studentnummer' name='studentnummer' required>
+
+        <!-- test -->
+        <label for='WAFSdocent'>WAFS docent</label>
+        <input type='text' id='WAFSdocent' name='WAFSdocent' required>
+
+        <button> verder
+          <!-- <span></span> verder -->
+        </button>
+
+      </form>
+
+      <%- include('./partials/footer.ejs') %>

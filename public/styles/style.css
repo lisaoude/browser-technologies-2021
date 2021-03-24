@@ -1,0 +1,9 @@
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  width: 10em;
+  height: 2em;
+}

@@ -216,3 +216,9 @@ In week 4 wordt de eindopdracht beoordeeld. Dan gaan we je werk bekijken, bespre
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+
+
+
+<!-- Resources -->
+<!-- https://www.youtube.com/watch?v=6iZiqQZBQJY -->
+<!-- https://www.youtube.com/watch?v=4zr8j-jeU_M -->
