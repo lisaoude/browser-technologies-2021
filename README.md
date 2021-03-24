@@ -2,223 +2,525 @@
 
 _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
-<!-- # Browser Technologies @cmda-minor-web 20-21
+# Gifinder as a Progressive Web App
 
-//Robuuste, toegankelijke websites ontwerpen en maken …
+_Made for Progressive Web App [@ cmda-minor-web 2020 - 2021](https://github.com/cmda-minor-web)_
 
-Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruik. [Het web is voor iedereen](https://www.youtube.com/watch?v=UMNFehJIi0E). Het is geen gecontroleerde (programmeer) omgeving, je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, kwaliteit van het netwerk en er zijn mensen, allemaal verschillende mensen ...
+![Gifinder Mockups](https://user-images.githubusercontent.com/57795294/111635461-c7947800-87f7-11eb-94dc-198ce14e6aaa.png)
 
-In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
+---
 
-## Opdrachten
+<!-------------------------- New Paragraph -------------------------->
 
-het vak bestaat uit 3 opdrachten. In week 1 werken we aan opdracht 1 en 2. Vanaf week 2 werken we aan de eindopdracht.
+## :pencil2: App description
 
-### Opdracht 1 🛹 NPM install Progressive- enhancement
+Always wanted to quickly see the trending GIFs? **_Gifinder_** is here! On load, you will get 24 GIFs that meet your requirements!
+By clicking on one of the GIFs, you will see that GIF's title, posted time, original source and a link to view the GIF at [Giphy.com](https://giphy.com)
 
-Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
+<!-- Always wanted to quickly search for a specific GIF? **_Gifinder_** is here! By simply typing a word of choice, you will get 24 GIFs that meet your requirements!
+By clicking on one of the GIFs, you will see that GIF's title, posted time, original source and a link to view the GIF at [Giphy.com](https://giphy.com) -->
 
-- [Opdracht 1 - NPM install Progressive Enhancement](course/Opdracht1.md)
+Gifinder is a server side rendering application.
 
-### Opdracht 2 💔 Breek het Web
+[**_My work_** can be viewed right here](https://gifinder-pwa.herokuapp.com/)
 
-Voor opdracht 2 ga je proberen het Web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
+<br/>
 
-- [Opdracht 2 - Breek het Web](course/Opdracht2.md)
+<!-- I have also made a [Wiki](https://github.com/lisaoude/Gifinder/wiki), where I kept a weekly log, explained some things about map, filter & reduce and made some JavaScript related annotations.
 
-### De eindopdracht ✨ Progressive Enhanced Browser Technologie
+<br/>  -->
 
-Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
+---
 
-- [De eindopdracht - Progressive Enhanced Browser Technologie](course/Eindopdracht.md)
+<!-------------------------- New Paragraph -------------------------->
 
+## :pushpin: Table of Contents
 
-### Leerdoelen
-- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
-- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
-- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._
+<!-- - [What does this Web App do?](#gem-What-does-this-Web-App-do?) -->
 
-[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/)
+- [API](#link-API)
+  <!-- - [Folders & Files](#open_file_folder-Folders-&-files) -->
+- [Used Packages](#gift-Used-Packages)
+- [Install](#inbox_tray-Install)
+- [Next Steps](#telescope-Next-Steps)
+- [License](#closed_lock_with_key-License)
+- [Sources](#books-Sources)
 
-## Planning & programma
+<br/>
 
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1](#week-1)  | Intro, College + briefing opdracht 1 | Presentaties opdracht 1, college +  briefing opdracht 2 | Presentaties opdracht 2 |
-| [Week 2](#week-2)  | College + Briefing De eindopdracht  | College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 3](#week-3)  | College + werken aan de opdracht  |  College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 4](#week-4)  | Beoordelingsgesprekken (Dinsdag en Woensdag) | Weekly Nerd | Goede vrijdag |
+---
 
-### Week 1
+<!-------------------------- New Paragraph -------------------------->
 
-Het web is voor iedereen: Deze week gaan we onderzoeken wat Progressive Enhancement is en kennismaken met testen ~~en het device lab~~.
+<!-- ## :gem: What does this Web App do?
 
-#### Woensdag 10 maart
+- Fetch & show the trending GIFs on load
+- Fetch & show the user GIFs based on the value they haved typed into the input field
+- Fetch & show the user the details of a GIF they clicked on
+- Provide the user with feedback while the content is loading
+- Provide the user with feedback when hovering over a GIF
 
-Browser Technolgies begint op woensdag. In het eerste college krijg je uitleg over het programma en over het nut van Progressive Enancement. Wat is dat eigenlijk? De meeste CMD studenten hebben dit waarschijnlijk al eens gehoord en misschien iets mee gedaan in blok Tech. Progressive Enhancement, oftewel PE, is een manier hoe je je de code van een website kan bouwen zodat alle gebruikers met alle browsers je website zo goed mogelijk te zien krijgen. Met PE kun je robuuste websites bouwen die het altijd doen. PE is een manier van denken.
+<br/>  -->
 
-| Woensdag 10/3 | Wat  |
-|---|---|
-| 9:30 | [College les 1 over het vak, wie, wat, waar en PE](course/BT2021-les1-progressive-enhancement.pdf)  |
-|  | [Briefing Opdracht 1 🛹 NPM install Progressive-Enhancement](course/Opdracht1.md) |
-| 16:00 | Checkout per team |
+---
 
-##### Lezen voor les 1 📖
+<!-------------------------- New Paragraph -------------------------->
 
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
+## :link: API
 
+### :question: Which API did I use?
 
+This Web App has been designed and developed with the [the Giphy API](https://developers.giphy.com/docs/api/).
+Giphy has the largest GIF library in the world and their API makes it possible to seamlessly integrate these GIFs into any application.
 
+<br/>
 
-#### Donderdag 11 maart
+### :eyes: What can you do with this API?
 
-Donderdag gaan we in je Squad opdracht 1 bekijken en bespreken. Als het goed is heb je een beeld gevormd van Progressive Enhancement. Tijdens de bespreking kun je ook vragen te stellen, samen onderzoeken we wat PE is, waarom het goed is om te begrijpen en misschien kunnen we al wat voorbeelden bespreken hoe je het zou kunnen toepassen.
+_All information can also be found on [the Giphy website](https://giphy.com)_
 
-In het college krijg je uitleg over opdracht 2. Voor deze opdracht ga je proberen het web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
+- Return a random GIF
+- Show trending GIFs to users
+- Let the user search for GIFs, using a word or phrase
+- Convert what the user typed into the input field into the perfect GIF using their :sparkles:special sauce:sparkles: algorithm
+- Autocomplete user input with a list of valid terms that completes what the user has typed into the input field
+- Generate a unique ID to assign to each new user in an application
+- Generate one or multiple GIFs by ID endpoint
+- Provide users with a list of GIF categories
+- Provide users with a list of the trending search terms
+- Suggest searches to users
+- Upload content programmatically on Giphy.com
 
-🤟 Vandaag geeft [Aaron Gustafson](https://www.aaron-gustafson.com) een gast-college. hij schreef in 2008 het artikel [Understanding Progressive Enhancement](https://alistapart.com/article/understandingprogressiveenhancement/) waarna deze manier van denken een belangrijk onderdeel werd van Web Development. Aaron Gustafson werkt bij Microsoft als 'web standard advocate' met het Edge browser team.
+<br/>
 
-| Donderdag 11/3 | Wat  |
-|---|---|
-| 9:30 | Opdracht 1 bespreken in Squads 🛹 |
-| 10:30 | College les 2 over Browser features |
-|  | [Briefing Opdracht 2 💔 Breek het web](course/Opdracht2.md) |
-| 16:00 | Checkout per team |
-| 18:00 | Gastcollege Aaron Gustafson 🤟 |
+### :raising_hand: What did I do with this API?
 
-Lezen voor les 2 📖
+I have implemented the following points into **_Gifinder_**:
 
-- [The unreasonable effectiveness of simple HTML by Terence Eden](https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/)
+**Home page**
 
-#### Vrijdag 12 maart
+- Show trending GIFs to users on load of the page
+<!-- - Let the user search for GIFs, using a word or phrase
+- Show the user the gifs they searched for using a word or phrase -->
 
-Vrijdag bespreken we in clubjes opdracht 2. Zorg dat je de bevindingen van je onderzoek online kan presenteren. We gaan de hele feature lijst doorlopen en alle studenten kunnen laten zien wat ze hebben onderzocht, met voorbeelden, de problemen, cijfers en/of meningen. Bedenk ook hoe je de problemen zou kunnen oplossen.
+<br/>
 
-| Vrijdag 12/3 | Wat  |
-|---|---|
-| 11:30 | Opdracht 2 bespreken in clubje A 💔 |
-| 13:00 | Opdracht 2 bespreken in clubje B 💔 |
-| 14:30 | Opdracht 2 bespreken in clubje C 💔 |
-| 16:00 | Work Hard Play Hard |
+**Detail page**
 
-### Week 2
+- Generate a GIF by ID endpoint
 
-In week 2 beginnen we met de eindopdracht. We hebben in week 1 onderzocht wat PE is en welke feautures wel of niet goed worden ondersteund. Deze week gaan we leren hoe je een interactieve toepassing in 3 lagen kan ontwerpen en wat je kan doen als een browser een 'enhancement' niet kan tonen.
+<br/>
 
-#### Woensdag 17 maart
+### :end: Endpoint & parameters
+<!-- The API that was used is the API supplied by The Movie DB. These are public APIs and can be found at the link below:
 
-Woensdag krijg je een briefing van de eindopdracht en een college over browsers, en alles (!) wat daarbij hoort. Daarna gaan we aan de slag: als je een interactieve toepassing ontwerpt die alle gebruikers, met alle browsers moeten kunnen zien, dan zul je moeten bedenken hoe je de toepassing in 3 lagen kan opbouwen, eerst bepaal je de core functionaliteit en de user-delight ... schetsen maar!
+https://developers.themoviedb.org/3/
 
-| Woensdag 17/3 | Wat  |
-|---|---|
-| 9:30 | College les 3 over browsers, browser detect, support detection en web views |
-|  | [Briefing eindopdracht ✨ Progressive Enhanced Browser Technologie](course/Eindopdracht.md) |
-| 10:30 | Sessies: User Deligt & Core functionaliteit ✨ |
-| 16:00 | Checkout per team |
+This has been my 'standard' endpoint to which several parameters have been added to retrieve the data. The parameters below were used to obtain the various information:
 
-#### Donderdag 18 maart
+discover/movie
+movie/${movieID}
+movie/${movieID}/recommendations
+movie/${movieID}/watch/providers
+search/movie
+Based on these parameters, it can be seen that I show discovery movies, a specific movie, recommended movies based on a specific movie, the places where this specific movie can be viewed and the user can search for movies.
 
-Donderdag gaan we voorbeelden van PE en feature detection bespreken in een college over form validatie. Daarna aan de slag met je ontwerp, in clubjes gaan we je ontwerpideeën bespreken en bedenken hoe je dit in 3 lagen zou kunnen bouwen.
+---
+-->
 
-🤟 Vandaag geeft [Heydon Pickering](https://heydonworks.com) een gastcollege om 14:00. Heydon Pickering is een web developer, hij geeft lezingen en schrijft over toegankelijkeid en web design o.a. voor [Smashing Magazin](https://www.smashingmagazine.com/author/heydon-pickering/). Vorige week heb je een metafoor voor PE bedacht naar aanleiding van een filmpje van Hedon Pickering zelf. Hij komt vandaag langs! Wat wil je hem vragen over het web?
+<!-------------------------- New Paragraph -------------------------->
 
-| Donderdag 18/3 | Wat  |
-|---|---|
-| 9:30 | College les 4 over form-validatie |
-| 10:30 | Sessies: Bouwen in 3 lagen ✨ |
-| 14:00 | Q&A Heydon Pickering 🤟 |
-| 16:00 | Checkout per team |
+<!-- ## :open_file_folder: Folders & files
 
-Lezen voor les 4 📖
+### Folder structure
 
-- [Be progressive by Jeremy Keith](https://adactio.com/journal/7706)
+During the development of Gifinder, I worked with modules for the first time. In my previous 'projects', as far as we can even call it that, my whopping 3 to 100 lines of JavaScript would just live in the same document. I used such little JavaScript, that it wasn't necessary to split it up at all. Because I'm obviously using MUCH more JavaScript for Gifinder, modules are great to keep everything organized. My folder & files structure for Gifinder looks like this:
 
-#### Vrijdag 19 maart
+![Folder & Files Structure](https://user-images.githubusercontent.com/57795294/109702534-a5aeba80-7b94-11eb-9be8-33a680f1eb2f.png)
 
-Vrijdag bespreken we in clubjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen.
+<br/>
 
-| Vrijdag 19/3 | Wat  |
-|---|---|
-| 11:30 | Vorderingen bespreken in clubje C ✨ |
-| 13:00 | Vorderingen bespreken in clubje A ✨ |
-| 14:30 | Vorderingen bespreken in clubje B ✨ |
-| 16:00 | Work Hard Play Hard |
+### Explanation folder structure
 
-### Week 3
+#### Assets
 
-Deze week werken we verder werken aan de eindopdracht en houden we gesprekken om jullie vorderingen te bespreken en vragen te beantwoorden.
+- Basically all code, except for my `index.html`, can be find inside this folder
 
-#### Woensdag 24 maart
+<br/>
 
-| Woensdag 24/3 | Wat  |
-|---|---|
-| 9:30 | College les 5 over Viewports |
-| 10:30 | Sessies: Feature detectie en testen ✨ |
-| 16:00 | Checkout per team |
+#### Scripts
 
-#### Donderdag 25 maart
+- In here all my JavaScript code can be found
 
-Donderdag gaan we verder werken aan de opdracht en doen we code-review sessies.
+<br/>
 
-🤟 Vandaag geeft Ischa Gast een presentatie.
+#### Components
 
-| Donderdag 25/3 | Wat  |
-|---|---|
-| 9:30 | Gastcollege Ischa Gast 🤟 |
-| 10:30 | Sessies: Code-reviews ✨ |
-| 16:00 | Checkout per team |
+- In this folder, my folder with separate elements can be found, as well as my larger components, amde with those separate elements. In this folder my `index.js` file can also be found.
 
-Lezen voor les 6 📖
+<br/>
 
-- [A minimum viable experience makes for a resilient, inclusive website or app](https://piccalil.li/blog/a-minimum-viable-experience-makes-for-a-resilient-inclusive-website-or-app)
+#### Index.js
 
-#### Vrijdag 26 maart
+- Although this is a file and not a folder, it's definitely worth talking about. In this file I import all the separate elements made inside the `elements` folder. This way I can import these elements with way less code in my other files. An example can be found below.
 
-Vrijdag bespreken we in clubjes de vorderingen voor de eindopdracht. Zorg dat je een code-review hebt gekregen van twee mede-studenten.
+##### **Example**
 
-| Vrijdag 26/3 | Wat  |
-|---|---|
-| 11:30 | Vorderingen bespreken in clubje B ✨ |
-| 13:00 | Vorderingen bespreken in clubje C ✨ |
-| 14:30 | Vorderingen bespreken in clubje A ✨ |
-| 16:00 | Work Hard Play Hard |
+```js
+// Messy, unnecessarily much code
+import { elementOne } from "./file1.js";
+import { elementTwo } from "./file2.js";
+import { elementThree } from "./file3.js";
+import { elementFour } from "./file4.js";
+import { elementFive } from "./file5.js";
+```
 
-### Week 4
+```js
+// Clean, easily understandable code
+import {
+  elementOne
+  elementTwo
+  elementThree
+  elementFour
+  elementFive
+  } from './index.js'
+```
 
-In week 4 wordt de eindopdracht beoordeeld. Dan gaan we je werk bekijken, bespreken en beoordelen.
+<br/>
 
-| Dinsdag 30/3 | Wat  |
-|---|---|
-| 9:30 - 15:30 | Beoordelingsgesprekken ✨ |
+#### Config
 
-| Woensdag 31/3 | Wat  |
-|---|---|
-| 9:30 - 15:30 | Beoordelingsgesprekken ✨ |
+- In this folder, my `config.js` files can be found. In this file I export variables, such as the url and key I need for my API.
 
-| Donderdag 1/4 | Wat  |
-|---|---|
-| 14:00 | [Weekly Nerd 2️⃣](https://github.com/cmda-minor-web/weekly-nerd-2021)| -->
+<br/>
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+#### Modules
 
-<!-- ☝️ replace this description with a description of your own work -->
+- The `getData.js` file inside this folder does just what its name says: get the data. It fetches either the trending gifs on load, or fetches the gifs that the user has searched for using their input in to the input field.
+- The `reloadHome.js` file inside this folder reloads the content on the home page after a request has been made. It makes sure to delete the previously loaded content before shaowing the new content.
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+<br/>
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+#### Routes
 
-<!-- Maybe a table of contents here? 📚 -->
+- The routes folder contains my ``router.js` file, where all possible routes are handled by the router. Because I use routie as my router, there's also a `routie.min.js` file. This file is provided for by Routie, and does not contain self-written code.
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+<br/>
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+#### Views
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+- The views folder contains all the pages that are rendered after a request has been made. These two pages use the imports from the `index.js` file in order to build all the HTML from scratch.
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+<br/>
 
+#### States
 
+- The states folder contains the loading state, which is shown during the loading of the gifs.
 
-<!-- Resources -->
-<!-- https://www.youtube.com/watch?v=6iZiqQZBQJY -->
-<!-- https://www.youtube.com/watch?v=4zr8j-jeU_M -->
+<br/>
+
+#### Main.js
+
+- This file is used to trigger the router and get Gifinder started.
+
+<br/> 
+-->
+
+---
+
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :gift: Used packages
+
+### :smiling_imp: nodemon
+[Nodemon](https://www.npmjs.com/package/nodemon) is a tool that helps with the development of node.js based applications. The nodemon package restarts the node application automatically when any file changes are made inside the directory.
+
+</br>
+
+I installed nodemon to quickly see wether the changes I made caused any errors, and also for the convenience that comes with automatic restarts.
+
+```
+npm i -g nodemon
+```
+
+</br>
+
+### :monorail: express
+[Express](https://www.npmjs.com/package/nodemon) is a node.js framework. 
+
+</br>
+
+I installed express, because this package makes routing via the server easier. Another reason for installing express, was the support for many template engines, as I used one for this project, but hadn't decided on one just yet.
+
+```
+npm i express
+```
+```
+const express = require('express');
+```
+
+</br>
+
+### :memo: ejs
+[Ejs](https://www.npmjs.com/package/ejs) is a template engine that makes it possible for JavaScript code to be injected into the client.
+
+</br>
+
+I installed ejs, because the package is easy to understand, has a gentle, gradual learning curve (which makes it great for newbies - like me!) and using the package makes it easier to inject dat from the server into the client.
+
+```
+npm i ejs
+```
+```
+app.set('view engine', 'ejs');
+```
+
+</br>
+
+### :large_blue_circle: dotenv
+[Dotenv](https://www.npmjs.com/package/dotenv) is a package that loads variables from a ```.env``` file.
+
+</br>
+
+I installed dotenv, because it helps to store sensitive data (such as the API key), which can then be hidden from the GitHUb repository using my ```.gitignore``` file.
+
+```
+npm i dotenv
+```
+```
+require('dotenv').config();
+```
+
+</br>
+
+### :dog::soccer: node-fetch
+[Node-fetch](https://www.npmjs.com/package/node-fetch) is a module which works just like the ```window.fetch``` methode does client side, but for the server side.
+
+</br>
+
+I installed node-fetch, because it allows me to do an API fetch via the server side.
+
+```
+npm i node-fetch
+```
+```
+const fetch = require('node-fetch');
+```
+
+</br>
+
+### :arrow_double_down: compression
+[Compression](https://www.npmjs.com/package/compression) is node.js compression middleware. 
+
+</br>
+
+I installed compression, because it  ensures that JSON and other static file responses are smaller.
+
+
+```
+npm i compression
+```
+```
+const compression = require('compression');
+```
+```
+app.use(compression());
+```
+
+</br>
+
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :inbox_tray: Install
+
+### 1. :dancers: Cone this repo
+
+Before we can get started, we'll need to clone this repo.
+This can be done by typing the following line of code into your terminal:
+
+`git clone https://github.com/lisaoude/gifinder-pwa.git`
+
+<br/>
+
+### 2. :computer: Install package
+
+Next, we will have to install the used packages.
+
+`npm install `
+
+<br/>
+
+### 3. :arrow_forward: Start local dev environment
+
+This can be done by typing the following line of code into your terminal:
+
+`npm run dev`
+
+<br/>
+
+### 4. :european_post_office: Build export
+
+Almost done! We just need to navigate to the localhost in the browser.
+
+`npm run build`
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :telescope: Next Steps
+
+We all know creative developing projects are never _truly_ done..  
+These are some next steps that I would love to make:
+
+- [ ] Make it possible to let the users search for GIFs
+
+<!-- - Make it possible for the user to save gifs, in the following ways:
+
+  - Save the gifs to a favorites list
+  - Save the gifs to a special collection, which the user can name themselves (e.g. funny gifs, cat gifs, etc.)
+  - Save the gifs to their device (download)
+
+- Give Gifinder a random mode
+
+  - Returns a random GIF o the user after a button press
+
+- Autocomplete user input with a list of valid terms that completes what the user has typed into the input field
+
+- Provide users with a list of GIF categories
+- Provide users with a list of the trending search terms
+- Suggest searches to users -->
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :closed_lock_with_key: License
+
+This repository is licensed as [MIT](https://github.com/lisaoude/browser-technologies-2021/blob/master/LICENSE) by © Lisa Oude Elferink, 2021
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :books: Sources
+
+- Schepenaar, W. (2018, June 12). Server-side vs Client-side Routing. Retrieved March 8, 2021, from [Medium](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
+- Ian Schoonover. (2020, June 27). How to Install Node JS on Windows 10. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/watch?v=AuCuHvgOeBY)
+- Installing Express. (2021). Retrieved March 8, 2021, from [Expressjs.com](http://expressjs.com/en/starter/installing.html)
+- The Net Ninja. (2020).  Node.js Crash Course Tutorial. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
+- npm: ejs. (2021, February 6). Retrieved March 9, 2021, from [NPMjs.com](https://www.npmjs.com/package/ejs)
+- npm: nodemon. (2021, January 6). Retrieved March 23, 2021, from [NPMjs.com](https://www.npmjs.com/package/nodemon)
+- npm: dotenv. (2019, October 16). Retrieved March 16, 2021, from [NPMjs.com](https://www.npmjs.com/package/dotenv)
+- npm: node-fetch. (2020, September 5). Retrieved March 16, 2021, from [NPMjs.com](https://www.npmjs.com/package/node-fetch)
+- The Net Ninja. (2019). PWA Tutorial for Beginners. Retrieved March 22, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7)
+- npm: compression. (2019, March 18). Retrieved March 23, 2021, from [NPMjs.com](https://www.npmjs.com/package/compression)
+
+
+
+<!-- In this course we will convert the client side web application previously made Web App From Scratch into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Ultimately we are going to implement a series of optimisations to improve the performance of the application.
+
+## Learning goals
+- _You understand the difference between client side and server side rendering and you can apply server side rendering
+in your application_
+- _You understand how a Service Worker works and you can implement it in your application._
+- _You understand how the critical render path works and how you can optimize it for a better runtime and / or perceived performance._
+
+[Rubric with learning goals](https://icthva.sharepoint.com/:x:/r/sites/FDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt/_layouts/15/Doc.aspx?sourcedoc=%7B276F53A7-2531-4006-8AD2-08C9A82D3A11%7D&file=PWA%202021%20Rubric.xlsx&action=edit&mobileredirect=true&wdPreviousSession=92686bea-446f-40e3-9303-33fa3f832b82&wdOrigin=TEAMS-ELECTRON.teams.undefined)
+
+## Program
+
+### Week 1 - Server Side Rendering 📡
+
+Goal: Render web pages server side
+
+[Exercises](https://github.com/cmda-minor-web/progressive-web-apps-2021/blob/master/course/week-1.md)
+[Server Side Rendering - slides Declan Rek](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/cmd-2021-server-side-rendering.pdf)
+
+
+### Week 2 - Progressive Web App 🚀
+
+Goals: Convert application to a Progressive Web App
+
+[Exercises](https://github.com/cmda-minor-web/progressive-web-apps-2021/blob/master/course/week-2.md)
+[Progressive Web Apps - slides Declan Rek](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/cmd-2020-progressive-web-apps.pdf)
+
+
+### Week 3 - Critical Rendering Path 📉
+
+Doel: Optimize the Critical Rendering Path
+[Exercises](https://github.com/cmda-minor-web/progressive-web-apps-2021/blob/master/course/week-3.md)
+[Critical Rendering Path - slides Declan Rek](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/cmd-2020-critical-rendering-path.pdf) -->
+
+<!--
+
+Notes Node.js Crash Course
+
+## #2 - Node.js Basics
+### Browser VS Node
+In the browser
+- Window is the global object
+  - Like window.setTimeout
+  - Window can be left out, because its presence is implied
+
+In node
+- Window is **not** the global object
+  - **Global** is the global object
+  - Represents the global context in a node environment
+
+
+### Global object
+As can be seen above, the global object in node is different from the global object in window.
+This means that most of the things in the window object we can't excess in node, such as DOM methods like the querySelector.
+
+
+### Dirname & Filename
+- dirname = directory name
+  - gets the absolute path of the current folder that the file is in
+
+- filename
+  - gets the absolute path of the current folder that the file is in **WITH** the file name added on
+
+
+## #3 - Clients & Servers
+### IP addresses and domains
+GET Request
+- Is made every time we go to a different webpage, either by a link or typing it directly into the address bar
+- We're sending a **GET Request** to the server to get a certain resource (like an HTML webpage)
+  - Communication via HTTP
+
+POST Request
+- Used to send data to a server from something like a webform
+
+
+### Creating a server
+In node, you manually create a server which lives on the back-end of your website.
+This server listens for requests from the browser and then decide what responses to send to the browser.
+
+
+### Localhost & Port numbers
+Localhost
+- Like a domain name you'd use on the web
+
+Port numbers
+- Like a door into a computer
+
+
+
+## #4 - Requests & Responses
+### Request object
+
+### Response object
+- What we use to send a response to the browser
+
+-->
