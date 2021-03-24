@@ -6,10 +6,11 @@ const Enquete = require('../models/enquete');
 const router = express.Router();
 
 // alle enquetes
+// /results - results EJS pag
 router.get('/', (req, res) => {
   Enquete.find().sort({ createdAt: -1 })
     .then((result) => {
-      res.render('index', {
+      res.render('results', {
         title: 'Alle Ingevulde Enquetes',
         enquetes: result
       })
@@ -21,6 +22,7 @@ router.get('/', (req, res) => {
 
 
 // ingevulde enquete opslaan
+// redirect naar /end
 router.post('/', (req, res) => {
   const enquete = new Enquete(req.body)
 
@@ -34,7 +36,8 @@ router.post('/', (req, res) => {
 });
 
 
-// ingevulde enquetes per stuk
+// ingevulde enquetes per persoon
+// details EJS pag
 router.get('/:id', (req, res) => {
   const id = req.params.id;
   Enquete.findById(id)
@@ -46,17 +49,5 @@ router.get('/:id', (req, res) => {
     });
 });
 
-
-// ingevulde enquetes verwijderen
-router.delete('/:id', (req, res) => {
-  const id = req.params.id;
-  Enquete.findByIdAndDelete(id)
-    .then(result => {
-      res.json({ redirect: '/results' });
-    })
-    .catch(err => {
-      console.log(err);
-    });
-});
 
 module.exports = router;

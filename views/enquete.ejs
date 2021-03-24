@@ -1,321 +1,319 @@
 <!-- De enquete zelf -->
 
 <%- include('./partials/head.ejs') %>
+  <%- include('./partials/header.ejs') %>
 
-  <%- include('./partials/nav.ejs') %>
-    <%- include('./partials/header.ejs') %>
+    <form action='/results' method='POST'>
 
-      <form action='/results' method='POST'>
+      <h2>Algemeen</h2>
+      <h3>Vul je naam & studentnummer in</h3>
+      <label for='naam'>Naam</label>
+      <input type='text' id='naam' name='naam' required>
 
-        <h2>Algemeen</h2>
-        <h3>Vul je naam & studentnummer in</h3>
-        <label for='naam'>Naam</label>
-        <input type='text' id='naam' name='naam' required>
+      <label for='studentnummer'>Studentnummer</label>
+      <input type='text' id='studentnummer' name='studentnummer' required>
 
-        <label for='studentnummer'>Studentnummer</label>
-        <input type='text' id='studentnummer' name='studentnummer' required>
 
+      <!---------- WAFS ----------->
+      <h2>Vak 1</h2>
+      <h3>Web App From Scratch</h3>
 
-        <!---------- WAFS ----------->
-        <h2>Vak 1</h2>
-        <h3>Web App From Scratch</h3>
+      <h4>Wie was je docent?</h4>
+      <label for='WAFSdocent'>
+        <input type='text' id='WAFSdocent' name='WAFSdocent' required>
+      </label>
 
-        <h4>Wie was je docent?</h4>
-        <label for='WAFSdocent'>
-          <input type='text' id='WAFSdocent' name='WAFSdocent' required>
-        </label>
 
+      <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
+      <label for='WAFSweken1-4'>
+        <input type='radio' id='WAFSweken1-4' name='WAFSweken14'>
+        Week 1 - 4</label>
 
-        <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
-        <label for='WAFSweken1-4'>
-          <input type='radio' id='WAFSweken1-4' name='WAFSweken14'>
-          Week 1 - 4</label>
+      <label for='WAFSweken4-9'>
+        <input type='radio' id='WAFSweken5-9' name='WAFSweken59'>
+        Week 5 - 9</label>
 
-        <label for='WAFSweken4-9'>
-          <input type='radio' id='WAFSweken5-9' name='WAFSweken59'>
-          Week 5 - 9</label>
+      <label for='WAFSweken10-14'>
+        <input type='radio' id='WAFSweken10-14' name='WAFSweken1014'>
+        Week 10 - 14</label>
 
-        <label for='WAFSweken10-14'>
-          <input type='radio' id='WAFSweken10-14' name='WAFSweken1014'>
-          Week 10 - 14</label>
 
+      <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
+      <label for='WAFSmoeilijk'>
+        <input type='text' id='WAFSmoeilijk' name='WAFSmoeilijk' required>
+      </label>
 
-        <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
-        <label for='WAFSmoeilijk'>
-          <input type='text' id='WAFSmoeilijk' name='WAFSmoeilijk' required>
-        </label>
 
+      <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
+      <label for='WAFSuitleg'>
+        <input type='text' id='WAFSuitleg' name='WAFSuitleg' required>
+      </label>
 
-        <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
-        <label for='WAFSuitleg'>
-          <input type='text' id='WAFSuitleg' name='WAFSuitleg' required>
-        </label>
 
+      <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
+      <label for='WAFSsnappen'>
+        <input type='text' id='WAFSsnappen' name='WAFSsnappen' required>
+      </label>
 
-        <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
-        <label for='WAFSsnappen'>
-          <input type='text' id='WAFSsnappen' name='WAFSsnappen' required>
-        </label>
 
+      <h4>Wat voor cijfer geef je het vak?</h4>
+      <label for='WAFScijfer'>
+        <input type='number' min='1' max='10' id='WAFScijfer' name='WAFScijfer' required>
+      </label>
 
-        <h4>Wat voor cijfer geef je het vak?</h4>
-        <label for='WAFScijfer'>
-          <input type='number' min='1' max='10' id='WAFScijfer' name='WAFScijfer' required>
-        </label>
 
+      <!---------- CSSttR ----------->
+      <h2>Vak 2</h2>
+      <h3>CSS to the Rescue</h3>
 
-        <!---------- CSSttR ----------->
-        <h2>Vak 2</h2>
-        <h3>CSS to the Rescue</h3>
+      <h4>Wie was je docent?</h4>
+      <label for='CSSttRdocent'>
+        <input type='text' id='CSSttRdocent' name='CSSttRdocent' required>
+      </label>
 
-        <h4>Wie was je docent?</h4>
-        <label for='CSSttRdocent'>
-          <input type='text' id='CSSttRdocent' name='CSSttRdocent' required>
-        </label>
 
+      <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
+      <label for='CSSttRweken1-4'>
+        <input type='radio' id='CSSttRweken1-4' name='CSSttRweken14'>
+        Week 1 - 4</label>
 
-        <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
-        <label for='CSSttRweken1-4'>
-          <input type='radio' id='CSSttRweken1-4' name='CSSttRweken14'>
-          Week 1 - 4</label>
+      <label for='CSSttRweken4-9'>
+        <input type='radio' id='CSSttRweken5-9' name='CSSttRweken59'>
+        Week 5 - 9</label>
 
-        <label for='CSSttRweken4-9'>
-          <input type='radio' id='CSSttRweken5-9' name='CSSttRweken59'>
-          Week 5 - 9</label>
+      <label for='CSSttRweken10-14'>
+        <input type='radio' id='CSSttRweken10-14' name='CSSttRweken1014'>
+        Week 10 - 14</label>
 
-        <label for='CSSttRweken10-14'>
-          <input type='radio' id='CSSttRweken10-14' name='CSSttRweken1014'>
-          Week 10 - 14</label>
 
+      <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
+      <label for='CSSttRmoeilijk'>
+        <input type='text' id='CSSttRmoeilijk' name='CSSttRmoeilijk' required>
+      </label>
 
-        <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
-        <label for='CSSttRmoeilijk'>
-          <input type='text' id='CSSttRmoeilijk' name='CSSttRmoeilijk' required>
-        </label>
 
+      <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
+      <label for='CSSttRuitleg'>
+        <input type='text' id='CSSttRuitleg' name='CSSttRuitleg' required>
+      </label>
 
-        <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
-        <label for='CSSttRuitleg'>
-          <input type='text' id='CSSttRuitleg' name='CSSttRuitleg' required>
-        </label>
 
+      <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
+      <label for='CSSttRsnappen'>
+        <input type='text' id='CSSttRsnappen' name='CSSttRsnappen' required>
+      </label>
 
-        <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
-        <label for='CSSttRsnappen'>
-          <input type='text' id='CSSttRsnappen' name='CSSttRsnappen' required>
-        </label>
 
+      <h4>Wat voor cijfer geef je het vak?</h4>
+      <label for='CSSttRcijfer'>
+        <input type='number' min='1' max='10' id='CSSttRcijfer' name='CSSttRcijfer' required>
+      </label>
 
-        <h4>Wat voor cijfer geef je het vak?</h4>
-        <label for='CSSttRcijfer'>
-          <input type='number' min='1' max='10' id='CSSttRcijfer' name='CSSttRcijfer' required>
-        </label>
 
+      <!---------- PWA ----------->
+      <h2>Vak 3</h2>
+      <h3>Progressive Web App</h3>
 
-        <!---------- PWA ----------->
-        <h2>Vak 3</h2>
-        <h3>Progressive Web App</h3>
+      <h4>Wie was je docent?</h4>
+      <label for='PWAdocent'>
+        <input type='text' id='PWAdocent' name='PWAdocent' required>
+      </label>
 
-        <h4>Wie was je docent?</h4>
-        <label for='PWAdocent'>
-          <input type='text' id='PWAdocent' name='PWAdocent' required>
-        </label>
 
+      <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
+      <label for='PWAweken1-4'>
+        <input type='radio' id='PWAweken1-4' name='PWAweken14'>
+        Week 1 - 4</label>
 
-        <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
-        <label for='PWAweken1-4'>
-          <input type='radio' id='PWAweken1-4' name='PWAweken14'>
-          Week 1 - 4</label>
+      <label for='PWAweken4-9'>
+        <input type='radio' id='PWAweken5-9' name='PWAweken59'>
+        Week 5 - 9</label>
 
-        <label for='PWAweken4-9'>
-          <input type='radio' id='PWAweken5-9' name='PWAweken59'>
-          Week 5 - 9</label>
+      <label for='PWAweken10-14'>
+        <input type='radio' id='PWAweken10-14' name='PWAweken1014'>
+        Week 10 - 14</label>
 
-        <label for='PWAweken10-14'>
-          <input type='radio' id='PWAweken10-14' name='PWAweken1014'>
-          Week 10 - 14</label>
 
+      <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
+      <label for='PWAmoeilijk'>
+        <input type='text' id='PWAmoeilijk' name='PWAmoeilijk' required>
+      </label>
 
-        <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
-        <label for='PWAmoeilijk'>
-          <input type='text' id='PWAmoeilijk' name='PWAmoeilijk' required>
-        </label>
 
+      <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
+      <label for='PWAuitleg'>
+        <input type='text' id='PWAuitleg' name='PWAuitleg' required>
+      </label>
 
-        <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
-        <label for='PWAuitleg'>
-          <input type='text' id='PWAuitleg' name='PWAuitleg' required>
-        </label>
 
+      <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
+      <label for='PWAsnappen'>
+        <input type='text' id='PWAsnappen' name='PWAsnappen' required>
+      </label>
 
-        <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
-        <label for='PWAsnappen'>
-          <input type='text' id='PWAsnappen' name='PWAsnappen' required>
-        </label>
 
+      <h4>Wat voor cijfer geef je het vak?</h4>
+      <label for='PWAcijfer'>
+        <input type='number' min='1' max='10' id='PWAcijfer' name='PWAcijfer' required>
+      </label>
 
-        <h4>Wat voor cijfer geef je het vak?</h4>
-        <label for='PWAcijfer'>
-          <input type='number' min='1' max='10' id='PWAcijfer' name='PWAcijfer' required>
-        </label>
 
 
+      <!---------- BT ----------->
+      <h2>Vak 4</h2>
+      <h3>Browser Technologies</h3>
 
-        <!---------- BT ----------->
-        <h2>Vak 4</h2>
-        <h3>Browser Technologies</h3>
+      <h4>Wie was je docent?</h4>
+      <label for='BTdocent'>
+        <input type='text' id='BTdocent' name='BTdocent' required>
+      </label>
 
-        <h4>Wie was je docent?</h4>
-        <label for='BTdocent'>
-          <input type='text' id='BTdocent' name='BTdocent' required>
-        </label>
 
+      <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
+      <label for='BTweken1-4'>
+        <input type='radio' id='BTweken1-4' name='BTweken14'>
+        Week 1 - 4</label>
 
-        <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
-        <label for='BTweken1-4'>
-          <input type='radio' id='BTweken1-4' name='BTweken14'>
-          Week 1 - 4</label>
+      <label for='BTweken4-9'>
+        <input type='radio' id='BTweken5-9' name='BTweken59'>
+        Week 5 - 9</label>
 
-        <label for='BTweken4-9'>
-          <input type='radio' id='BTweken5-9' name='BTweken59'>
-          Week 5 - 9</label>
+      <label for='BTweken10-14'>
+        <input type='radio' id='BTweken10-14' name='BTweken1014'>
+        Week 10 - 14</label>
 
-        <label for='BTweken10-14'>
-          <input type='radio' id='BTweken10-14' name='BTweken1014'>
-          Week 10 - 14</label>
 
+      <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
+      <label for='BTmoeilijk'>
+        <input type='text' id='BTmoeilijk' name='BTmoeilijk' required>
+      </label>
 
-        <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
-        <label for='BTmoeilijk'>
-          <input type='text' id='BTmoeilijk' name='BTmoeilijk' required>
-        </label>
 
+      <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
+      <label for='BTuitleg'>
+        <input type='text' id='BTuitleg' name='BTuitleg' required>
+      </label>
 
-        <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
-        <label for='BTuitleg'>
-          <input type='text' id='BTuitleg' name='BTuitleg' required>
-        </label>
 
+      <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
+      <label for='BTsnappen'>
+        <input type='text' id='BTsnappen' name='BTsnappen' required>
+      </label>
 
-        <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
-        <label for='BTsnappen'>
-          <input type='text' id='BTsnappen' name='BTsnappen' required>
-        </label>
 
+      <h4>Wat voor cijfer geef je het vak?</h4>
+      <label for='BTcijfer'>
+        <input type='number' min='1' max='10' id='BTcijfer' name='BTcijfer' required>
+      </label>
 
-        <h4>Wat voor cijfer geef je het vak?</h4>
-        <label for='BTcijfer'>
-          <input type='number' min='1' max='10' id='BTcijfer' name='BTcijfer' required>
-        </label>
 
 
 
 
+      <!---------- RTW ----------->
+      <h2>Vak 5</h2>
+      <h3>Real-Time Web</h3>
 
-        <!---------- RTW ----------->
-        <h2>Vak 5</h2>
-        <h3>Real-Time Web</h3>
+      <h4>Wie was je docent?</h4>
+      <label for='RTWdocent'>
+        <input type='text' id='RTWdocent' name='RTWdocent' required>
+      </label>
 
-        <h4>Wie was je docent?</h4>
-        <label for='RTWdocent'>
-          <input type='text' id='RTWdocent' name='RTWdocent' required>
-        </label>
 
+      <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
+      <label for='RTWweken1-4'>
+        <input type='radio' id='RTWweken1-4' name='RTWweken14'>
+        Week 1 - 4</label>
 
-        <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
-        <label for='RTWweken1-4'>
-          <input type='radio' id='RTWweken1-4' name='RTWweken14'>
-          Week 1 - 4</label>
+      <label for='RTWweken4-9'>
+        <input type='radio' id='RTWweken5-9' name='RTWweken59'>
+        Week 5 - 9</label>
 
-        <label for='RTWweken4-9'>
-          <input type='radio' id='RTWweken5-9' name='RTWweken59'>
-          Week 5 - 9</label>
+      <label for='RTWweken10-14'>
+        <input type='radio' id='RTWweken10-14' name='RTWweken1014'>
+        Week 10 - 14</label>
 
-        <label for='RTWweken10-14'>
-          <input type='radio' id='RTWweken10-14' name='RTWweken1014'>
-          Week 10 - 14</label>
 
+      <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
+      <label for='RTWmoeilijk'>
+        <input type='text' id='RTWmoeilijk' name='RTWmoeilijk' required>
+      </label>
 
-        <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
-        <label for='RTWmoeilijk'>
-          <input type='text' id='RTWmoeilijk' name='RTWmoeilijk' required>
-        </label>
 
+      <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
+      <label for='RTWuitleg'>
+        <input type='text' id='RTWuitleg' name='RTWuitleg' required>
+      </label>
 
-        <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
-        <label for='RTWuitleg'>
-          <input type='text' id='RTWuitleg' name='RTWuitleg' required>
-        </label>
 
+      <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
+      <label for='RTWsnappen'>
+        <input type='text' id='RTWsnappen' name='RTWsnappen' required>
+      </label>
 
-        <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
-        <label for='RTWsnappen'>
-          <input type='text' id='RTWsnappen' name='RTWsnappen' required>
-        </label>
 
+      <h4>Wat voor cijfer geef je het vak?</h4>
+      <label for='RTWcijfer'>
+        <input type='number' min='1' max='10' id='RTWcijfer' name='RTWcijfer' required>
+      </label>
 
-        <h4>Wat voor cijfer geef je het vak?</h4>
-        <label for='RTWcijfer'>
-          <input type='number' min='1' max='10' id='RTWcijfer' name='RTWcijfer' required>
-        </label>
 
 
 
+      <!---------- HCD ----------->
+      <h2>Vak 6</h2>
+      <h3>Human Centred Design</h3>
 
-        <!---------- HCD ----------->
-        <h2>Vak 6</h2>
-        <h3>Human Centred Design</h3>
+      <h4>Wie was je docent?</h4>
+      <label for='HCDdocent'>
+        <input type='text' id='HCDdocent' name='HCDdocent' required>
+      </label>
 
-        <h4>Wie was je docent?</h4>
-        <label for='HCDdocent'>
-          <input type='text' id='HCDdocent' name='HCDdocent' required>
-        </label>
 
+      <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
+      <label for='HCDweken1-4'>
+        <input type='radio' id='HCDweken1-4' name='HCDweken14'>
+        Week 1 - 4</label>
 
-        <h4>Tijdens welke weken heb je het vak gevolgd?</h4>
-        <label for='HCDweken1-4'>
-          <input type='radio' id='HCDweken1-4' name='HCDweken14'>
-          Week 1 - 4</label>
+      <label for='HCDweken4-9'>
+        <input type='radio' id='HCDweken5-9' name='HCDweken59'>
+        Week 5 - 9</label>
 
-        <label for='HCDweken4-9'>
-          <input type='radio' id='HCDweken5-9' name='HCDweken59'>
-          Week 5 - 9</label>
+      <label for='HCDweken10-14'>
+        <input type='radio' id='HCDweken10-14' name='HCDweken1014'>
+        Week 10 - 14</label>
 
-        <label for='HCDweken10-14'>
-          <input type='radio' id='HCDweken10-14' name='HCDweken1014'>
-          Week 10 - 14</label>
 
+      <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
+      <label for='HCDmoeilijk'>
+        <input type='text' id='HCDmoeilijk' name='HCDmoeilijk' required>
+      </label>
 
-        <h4>Hoe vond je het vak qua moeilijkheidsgraad?</h4>
-        <label for='HCDmoeilijk'>
-          <input type='text' id='HCDmoeilijk' name='HCDmoeilijk' required>
-        </label>
 
+      <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
+      <label for='HCDuitleg'>
+        <input type='text' id='HCDuitleg' name='HCDuitleg' required>
+      </label>
 
-        <h4>Wat vond je van de gegeven uitleg bij dit vak?</h4>
-        <label for='HCDuitleg'>
-          <input type='text' id='HCDuitleg' name='HCDuitleg' required>
-        </label>
 
+      <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
+      <label for='HCDsnappen'>
+        <input type='text' id='HCDsnappen' name='HCDsnappen' required>
+      </label>
 
-        <h4>Hoe goed denk je dat je dit vak nu snapt?</h4>
-        <label for='HCDsnappen'>
-          <input type='text' id='HCDsnappen' name='HCDsnappen' required>
-        </label>
 
+      <h4>Wat voor cijfer geef je het vak?</h4>
+      <label for='HCDcijfer'>
+        <input type='number' min='1' max='10' id='HCDcijfer' name='HCDcijfer' required>
+      </label>
 
-        <h4>Wat voor cijfer geef je het vak?</h4>
-        <label for='HCDcijfer'>
-          <input type='number' min='1' max='10' id='HCDcijfer' name='HCDcijfer' required>
-        </label>
 
 
 
+      <button> Submit
+        <!-- <span></span> verder -->
+      </button>
 
-        <button> Submit
-          <!-- <span></span> verder -->
-        </button>
+    </form>
 
-      </form>
-
-      <%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %>

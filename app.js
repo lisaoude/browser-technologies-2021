@@ -4,7 +4,6 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 const app = express();
 const mongoose = require('mongoose');
-// const { render } = require('ejs');
 
 // Routes
 const resultRoutes = require('./routes/resultRoutes')
@@ -31,66 +30,14 @@ app.use('/results', resultRoutes);
 
 
 // Routing
-app.get('/enquete', (req, res) => {
+app.get('/', (req, res) => {
   res.render('enquete', {
     title: 'Minor WDD Enquête',
   });
 });
 
-app.get('/home', (req, res) => {
-  res.render('home', {
-    title: 'Minor WDD Enquête',
-    headTwo: 'hoi'
-  });
-});
 
-app.get('/login', (req, res) => {
-  res.render('login', {
-    title: 'Inloggen',
-  });
-});
 
-app.get('/wafs1', (req, res) => {
-  res.render('wafs1', {
-    title: 'WAFS1',
-  });
-});
-
-app.get('/wafs2', (req, res) => {
-  res.render('wafs2', {
-    title: 'WAFS2',
-  });
-});
-
-app.get('/wafs3', (req, res) => {
-  res.render('wafs3', {
-    title: 'WAFS3',
-  });
-});
-
-app.get('/wafs4', (req, res) => {
-  res.render('wafs4', {
-    title: 'WAFS4',
-  });
-});
-
-app.get('/wafs5', (req, res) => {
-  res.render('wafs5', {
-    title: 'WAFS5',
-  });
-});
-
-app.get('/wafs6', (req, res) => {
-  res.render('wafs6', {
-    title: 'WAFS6',
-  });
-});
-
-app.get('/submit', (req, res) => {
-  res.render('submit', {
-    title: 'SUBMIT',
-  });
-});
 
 app.get('/end', (req, res) => {
   res.render('end', {

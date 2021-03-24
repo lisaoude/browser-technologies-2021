@@ -1,0 +1,27 @@
+<!-- Alle ingevulde enquetes - alleen naam & studentnummer -->
+
+<%- include('./partials/head.ejs') %>
+
+  <div>
+    <h2> Alle Ingevulde Enquetes</h2>
+
+    <% if (enquetes.length> 0) { %>
+      <% enquetes.forEach(enquete=> { %>
+
+        <a href="/results/<%= enquete._id %>">
+          <h3>
+            <%= enquete.naam %>
+          </h3>
+          <h4>
+            <%= enquete.studentnummer %>
+          </h4>
+        </a>
+
+        <% }) %>
+          <% } else { %>
+            <p>Hier is niks</p>
+            <% } %>
+
+  </div>
+
+  <%- include('./partials/footer.ejs') %>
