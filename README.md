@@ -2,11 +2,11 @@
 
 _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
-# Gifinder as a Progressive Web App
+<!-- # Gifinder as a Progressive Web App
 
 _Made for Progressive Web App [@ cmda-minor-web 2020 - 2021](https://github.com/cmda-minor-web)_
 
-![Gifinder Mockups](https://user-images.githubusercontent.com/57795294/111635461-c7947800-87f7-11eb-94dc-198ce14e6aaa.png)
+![Gifinder Mockups](https://user-images.githubusercontent.com/57795294/111635461-c7947800-87f7-11eb-94dc-198ce14e6aaa.png) -->
 
 ---
 
@@ -14,15 +14,12 @@ _Made for Progressive Web App [@ cmda-minor-web 2020 - 2021](https://github.com/
 
 ## :pencil2: App description
 
-Always wanted to quickly see the trending GIFs? **_Gifinder_** is here! On load, you will get 24 GIFs that meet your requirements!
+<!-- Always wanted to quickly see the trending GIFs? **_Gifinder_** is here! On load, you will get 24 GIFs that meet your requirements!
 By clicking on one of the GIFs, you will see that GIF's title, posted time, original source and a link to view the GIF at [Giphy.com](https://giphy.com)
-
-<!-- Always wanted to quickly search for a specific GIF? **_Gifinder_** is here! By simply typing a word of choice, you will get 24 GIFs that meet your requirements!
-By clicking on one of the GIFs, you will see that GIF's title, posted time, original source and a link to view the GIF at [Giphy.com](https://giphy.com) -->
 
 Gifinder is a server side rendering application.
 
-[**_My work_** can be viewed right here](https://gifinder-pwa.herokuapp.com/)
+[**_My work_** can be viewed right here](https://gifinder-pwa.herokuapp.com/) -->
 
 <br/>
 
@@ -38,13 +35,12 @@ Gifinder is a server side rendering application.
 
 <!-- - [What does this Web App do?](#gem-What-does-this-Web-App-do?) -->
 
-- [API](#link-API)
-  <!-- - [Folders & Files](#open_file_folder-Folders-&-files) -->
+<!-- - [API](#link-API)
 - [Used Packages](#gift-Used-Packages)
 - [Install](#inbox_tray-Install)
 - [Next Steps](#telescope-Next-Steps)
 - [License](#closed_lock_with_key-License)
-- [Sources](#books-Sources)
+- [Sources](#books-Sources) -->
 
 <br/>
 
@@ -66,7 +62,7 @@ Gifinder is a server side rendering application.
 
 <!-------------------------- New Paragraph -------------------------->
 
-## :link: API
+<!-- ## :link: API
 
 ### :question: Which API did I use?
 
@@ -89,29 +85,27 @@ _All information can also be found on [the Giphy website](https://giphy.com)_
 - Provide users with a list of GIF categories
 - Provide users with a list of the trending search terms
 - Suggest searches to users
-- Upload content programmatically on Giphy.com
+- Upload content programmatically on Giphy.com -->
 
 <br/>
 
-### :raising_hand: What did I do with this API?
+<!-- ### :raising_hand: What did I do with this API?
 
 I have implemented the following points into **_Gifinder_**:
 
 **Home page**
 
 - Show trending GIFs to users on load of the page
-<!-- - Let the user search for GIFs, using a word or phrase
-- Show the user the gifs they searched for using a word or phrase -->
 
 <br/>
 
 **Detail page**
 
-- Generate a GIF by ID endpoint
+- Generate a GIF by ID endpoint -->
 
 <br/>
 
-### :end: Endpoint & parameters
+<!-- ### :end: Endpoint & parameters -->
 <!-- The API that was used is the API supplied by The Movie DB. These are public APIs and can be found at the link below:
 
 https://developers.themoviedb.org/3/
@@ -231,7 +225,7 @@ import {
 
 <!-------------------------- New Paragraph -------------------------->
 
-## :gift: Used packages
+<!-- ## :gift: Used packages
 
 ### :smiling_imp: nodemon
 [Nodemon](https://www.npmjs.com/package/nodemon) is a tool that helps with the development of node.js based applications. The nodemon package restarts the node application automatically when any file changes are made inside the directory.
@@ -328,14 +322,14 @@ const compression = require('compression');
 app.use(compression());
 ```
 
-</br>
+</br> -->
 
 
 ---
 
 <!-------------------------- New Paragraph -------------------------->
 
-## :inbox_tray: Install
+<!-- ## :inbox_tray: Install
 
 ### 1. :dancers: Cone this repo
 
@@ -368,18 +362,18 @@ Almost done! We just need to navigate to the localhost in the browser.
 
 `npm run build`
 
-<br/>
+<br/> -->
 
 ---
 
 <!-------------------------- New Paragraph -------------------------->
 
-## :telescope: Next Steps
+<!-- ## :telescope: Next Steps
 
 We all know creative developing projects are never _truly_ done..  
 These are some next steps that I would love to make:
 
-- [ ] Make it possible to let the users search for GIFs
+- [ ] Make it possible to let the users search for GIFs -->
 
 <!-- - Make it possible for the user to save gifs, in the following ways:
 
@@ -415,7 +409,7 @@ This repository is licensed as [MIT](https://github.com/lisaoude/browser-technol
 
 ## :books: Sources
 
-- Schepenaar, W. (2018, June 12). Server-side vs Client-side Routing. Retrieved March 8, 2021, from [Medium](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
+<!-- - Schepenaar, W. (2018, June 12). Server-side vs Client-side Routing. Retrieved March 8, 2021, from [Medium](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
 - Ian Schoonover. (2020, June 27). How to Install Node JS on Windows 10. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/watch?v=AuCuHvgOeBY)
 - Installing Express. (2021). Retrieved March 8, 2021, from [Expressjs.com](http://expressjs.com/en/starter/installing.html)
 - The Net Ninja. (2020).  Node.js Crash Course Tutorial. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
@@ -424,7 +418,7 @@ This repository is licensed as [MIT](https://github.com/lisaoude/browser-technol
 - npm: dotenv. (2019, October 16). Retrieved March 16, 2021, from [NPMjs.com](https://www.npmjs.com/package/dotenv)
 - npm: node-fetch. (2020, September 5). Retrieved March 16, 2021, from [NPMjs.com](https://www.npmjs.com/package/node-fetch)
 - The Net Ninja. (2019). PWA Tutorial for Beginners. Retrieved March 22, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7)
-- npm: compression. (2019, March 18). Retrieved March 23, 2021, from [NPMjs.com](https://www.npmjs.com/package/compression)
+- npm: compression. (2019, March 18). Retrieved March 23, 2021, from [NPMjs.com](https://www.npmjs.com/package/compression) -->
 
 
 
