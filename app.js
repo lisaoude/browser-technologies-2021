@@ -22,21 +22,14 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
+
 // Routes
 const endscreenRoutes = require('./routes/endscreenRoutes')
 const resultRoutes = require('./routes/resultRoutes')
 const errorRoutes = require('./routes/errorRoutes')
 
+
 // Routing
 app.use('/end', endscreenRoutes);
 app.use('/results', resultRoutes);
 app.use('/404', errorRoutes);
-
-
-
-
-
-
-
-
-

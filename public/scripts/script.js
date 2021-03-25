@@ -1,6 +1,6 @@
 //////////////// Variables
 
-// 'login' variables
+// 'login' variables for localStorage
 const naamKey = document.querySelector("#naamKey");
 const naamValue = document.querySelector("#naam");
 const studentnummerKey = document.querySelector("#studentnummerKey");
@@ -8,7 +8,7 @@ const studentnummerValue = document.querySelector("#studentnummer");
 const loginButton = document.querySelector("#loginButton");
 
 
-// WAFS variables
+// WAFS variables for localStorage
 const wafsDocentKey = document.querySelector("#WAFSdocentKey");
 const wafsDocentValue = document.querySelector("#WAFSdocent");
 
@@ -34,7 +34,7 @@ const wafsCijferKey = document.querySelector("#WAFScijferKey");
 const wafsCijferValue = document.querySelector("#WAFScijfer");
 
 
-// CSSTTR variables
+// CSSTTR variables for localStorage
 const cssttrDocentKey = document.querySelector("#CSSTTRdocentKey");
 const cssttrDocentValue = document.querySelector("#CSSTTRdocent");
 
@@ -60,7 +60,7 @@ const cssttrCijferKey = document.querySelector("#CSSTTRcijferKey");
 const cssttrCijferValue = document.querySelector("#CSSTTRcijfer");
 
 
-// PWA variables
+// PWA variables for localStorage
 const pwaDocentKey = document.querySelector("#PWAdocentKey");
 const pwaDocentValue = document.querySelector("#PWAdocent");
 
@@ -86,7 +86,7 @@ const pwaCijferKey = document.querySelector("#PWAcijferKey");
 const pwaCijferValue = document.querySelector("#PWAcijfer");
 
 
-// BT variables
+// BT variables for localStorage
 const btDocentKey = document.querySelector("#BTdocentKey");
 const btDocentValue = document.querySelector("#BTdocent");
 
@@ -112,7 +112,7 @@ const btCijferKey = document.querySelector("#BTcijferKey");
 const btCijferValue = document.querySelector("#BTcijfer");
 
 
-// RTW variables
+// RTW variables for localStorage
 const rtwDocentKey = document.querySelector("#RTWdocentKey");
 const rtwDocentValue = document.querySelector("#RTWdocent");
 
@@ -138,7 +138,7 @@ const rtwCijferKey = document.querySelector("#RTWcijferKey");
 const rtwCijferValue = document.querySelector("#RTWcijfer");
 
 
-// HCD variables
+// HCD variables for localStorage
 const hcdDocentKey = document.querySelector("#HCDdocentKey");
 const hcdDocentValue = document.querySelector("#HCDdocent");
 
@@ -341,9 +341,3 @@ submitButton.onclick = () => {
   localStorage.setItem(hcdSnappen, valueHcdSnappen);
   localStorage.setItem(hcdCijfer, valueHcdCijfer);
 };
-
-
-
-
-///////////////////////////////////////////
-console.log(localStorage)
