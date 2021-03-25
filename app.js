@@ -5,8 +5,6 @@ require('dotenv').config();
 const app = express();
 const mongoose = require('mongoose');
 
-// Routes
-const resultRoutes = require('./routes/resultRoutes')
 
 // Internals
 const PORT = process.env.PORT || 3000;
@@ -24,34 +22,21 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
-
-// Result routes
-app.use('/results', resultRoutes);
-
+// Routes
+const endscreenRoutes = require('./routes/endscreenRoutes')
+const resultRoutes = require('./routes/resultRoutes')
+const errorRoutes = require('./routes/errorRoutes')
 
 // Routing
-app.get('/', (req, res) => {
-  res.render('enquete', {
-    title: 'Minor WDD Enquête',
-  });
-});
+app.use('/end', endscreenRoutes);
+app.use('/results', resultRoutes);
+app.use('/404', errorRoutes);
 
 
 
 
-app.get('/end', (req, res) => {
-  res.render('end', {
-    title: 'Einde',
-  });
-});
 
 
 
 
-// 404 page
-app.use((req, res) => {
-  res.render('404', {
-    title: '404'
-  });
-});
 
