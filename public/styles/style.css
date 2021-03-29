@@ -1,10 +1,266 @@
-/* Minimal styling just so I dont go crazy while doing html & js basics */
-main {
-  max-width: 90%;
-  margin: 0 auto;
+/******************************/
+/*           GENERAL          */
+/******************************/
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
 }
 
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"); 
+
+
+/******************************/
+/*            BODY            */
+/******************************/
+body {
+  background-color: #34A8E0;
+  background: linear-gradient(180deg, #34A8E0 60.94%, #3AAA34 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/******************************/
+/*           HEADER           */
+/******************************/
+header {
+  margin: 0 auto;
+  width: 60%;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header svg {
+  width: 40px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+
+/******************************/
+/*         TYPOGRAPHY         */
+/******************************/
+h1,
+h2,
+h3,
+p,
+label,
+input,
 button {
-  width: 10em;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.35em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h3,
+p,
+label {
+  font-size: 1em;
+  font-weight: 400;
+  /* color: blue; */
+}
+
+input[type=button],
+input[type=submit] {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+
+/******************************/
+/*        PROGRESS BAR        */
+/******************************/
+/* gray bar */
+span {
+  position: absolute;
+  width: 84.5%;
+  height: 1em;
+  border-radius: 25px;
+  background-color: #D2D2D2;
+}
+
+/* black bar */
+span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  border-radius: 25px;
+  background-color: #000000;
+}
+
+/* black bar width */
+.loginVoortgang::before {
+  width: 1em;
+}
+
+.wafsVoortgang::before {
+  width: 14%;
+}
+
+.cssttrVoortgang::before {
+  width: 28%;
+}
+
+.pwaVoortgang::before {
+  width: 42%;
+}
+
+.btVoortgang::before {
+  width: 57%;
+}
+
+.rtwVoortgang::before {
+  width: 71%
+}
+
+.hcdVoortgang::before {
+  width: 85%;
+}
+
+.endVoortgang::before {
+  width: 100%;
+}
+
+
+/******************************/
+/*          CAROUSEL          */
+/******************************/
+.carousel {
+  position: relative;
+  filter: drop-shadow(0 0 10px #000000);
+  /* perspective: 100px; */
+}
+
+ol,
+li {    
+  list-style: none;
+}
+
+/* list */
+ol {
+  margin: 0 auto;
+  position: relative;
+  top: 4em;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 40em;
+  border-radius: 20px;
+  overflow-x: scroll;
+  /* scroll-snap-type: x mandatory; */
+}
+
+/* list items */
+li {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px;
+  flex: 0 0 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #ffffff;
+}
+
+/* display none & block for navigation */
+/* li {
+  display: none;
+}
+
+:target {
+  display: block;
+} */
+
+
+/******************************/
+/*          SECTIONS          */
+/******************************/
+section:not(.carousel, .content) {
+  position: relative;
+  top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: hotpink;
+  width: 100%;
+  height: auto;
+}
+
+
+/******************************/
+/*           LABELS           */
+/******************************/
+/* label {
+
+} */
+
+
+/******************************/
+/*        INPUT FIELDS        */
+/******************************/
+input[type=text] {
+  /* width: 95%; */
   height: 2em;
+  box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/******************************/
+/*           BUTTONS          */
+/******************************/
+input[type=button],
+input[type=submit] {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+
+/******************************/
+/*         END SCREEN         */
+/******************************/
+.end {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+
+/******************************/
+/*           FOOTER           */
+/******************************/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
