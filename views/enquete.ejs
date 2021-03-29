@@ -1,0 +1,144 @@
+<%- include('./partials/head.ejs') %>
+
+  <section class="carousel">
+    <form method='post' action='/results'>
+
+      <ol>
+
+        <li id="login">
+          <%- include('./partials/header.ejs') %>
+
+            <section class='content'>
+              <span class="loginVoortgang"></span>
+
+              <section>
+                <h1>Algemeen</h1>
+                <h2>Vul je naam & studentnummer in</h2>
+
+                <label id='naamKey' for='naam'>Naam</label>
+                <input type='text' id='naam' name='naam' required>
+
+                <label id='studentnummerKey' for='studentnummer'>Studentnummer</label>
+                <input type='text' id='studentnummer' name='studentnummer' required>
+
+                <a href="#wafs" id="loginButton">
+                  <input type="button" value="Volgende">
+                </a>
+              </section>
+            </section>
+
+        </li>
+
+        <!---------- WAFS ----------->
+        <li id="wafs">
+          <%- include('./partials/header.ejs') %>
+
+            <section class='content'>
+              <%- include('./partials/wafs-part.ejs') %>
+
+                <a href="#login">
+                  <input type="button" value='Vorige'>
+                </a>
+
+                <a href="#cssttr">
+                  <input id="wafsButton" type="button" value='Volgende'>
+                </a>
+            </section>
+  </section>
+  </li>
+
+  <!---------- CSSTTR ----------->
+  <li id="cssttr">
+    <%- include('./partials/header.ejs') %>
+
+      <section class='content'>
+        <%- include('./partials/cssttr-part.ejs') %>
+
+          <a href="#wafs">
+            <input type="button" value='Vorige'>
+          </a>
+
+          <a href="#pwa">
+            <input id="cssttrButton" type="button" value='Volgende'>
+          </a>
+      </section>
+      </section>
+  </li>
+
+  <!---------- PWA ----------->
+  <li id="pwa">
+    <%- include('./partials/header.ejs') %>
+
+      <section class='content'>
+        <%- include('./partials/pwa-part.ejs') %>
+
+          <a href="#cssttr">
+            <input type="button" value='Vorige'>
+          </a>
+
+          <a href="#bt">
+            <input id="pwaButton" type="button" value='Volgende'>
+          </a>
+      </section>
+      </section>
+  </li>
+
+  <!---------- BT ----------->
+  <li id="bt">
+    <%- include('./partials/header.ejs') %>
+
+      <section class='content'>
+        <%- include('./partials/bt-part.ejs') %>
+
+          <a href="#pwa">
+            <input type="button" value='Vorige'>
+          </a>
+
+          <a href="#rtw">
+            <input id="btButton" type="button" value='Volgende'>
+          </a>
+      </section>
+      </section>
+  </li>
+
+  <!---------- RTW ----------->
+  <li id="rtw">
+    <%- include('./partials/header.ejs') %>
+
+      <section class='content'>
+        <%- include('./partials/rtw-part.ejs') %>
+
+          <a href="#bt">
+            <input type="button" value='Vorige'>
+          </a>
+
+          <a href="#hcd">
+            <input id="rtwButton" type="button" value='Volgende'>
+          </a>
+      </section>
+      </section>
+  </li>
+
+  <!---------- HCD ----------->
+  <li id="hcd">
+    <%- include('./partials/header.ejs') %>
+
+      <section class='content'>
+        <%- include('./partials/hcd-part.ejs') %>
+
+          <a href="#rtw">
+            <input type="button" value='Vorige'>
+          </a>
+
+          <!-- SUBMIT BUTTON -->
+          <input id="submitButton" type="submit" value='Versturen'>
+      </section>
+      </section>
+  </li>
+
+  </ol>
+
+  </form>
+  </section>
+
+  <%- include('./partials/footer.ejs') %>

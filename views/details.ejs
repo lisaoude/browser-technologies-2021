@@ -4,155 +4,157 @@
 
 <%- include('./partials/head.ejs') %>
 
-  <div>
+  <%- include('./partials/header.ejs') %>
 
-    <!-- Algemeen -->
-    <h2>Algemeen</h2>
-    <h3>
-      <%= enquete.naam %>
-    </h3>
-    <h4>
-      <%= enquete.studentnummer %>
-    </h4>
+    <div>
 
-    <!-- WAFS -->
-    <h2>WAFS</h2>
-    <h4>WAFS docent</h4>
-    <p>
-      <%= enquete.WAFSdocent %>
-    </p>
+      <!-- Algemeen -->
+      <h1>Algemeen</h1>
+      <h2>
+        <%= enquete.naam %>
+      </h2>
+      <h2>
+        <%= enquete.studentnummer %>
+      </h2>
 
-    <h4>WAFS weken</h4>
-    <p>
-      <%= enquete.WAFSweken %>
-    </p>
+      <!-- WAFS -->
+      <h1>WAFS</h1>
+      <h2>WAFS docent</h2>
+      <p>
+        <%= enquete.WAFSdocent %>
+      </p>
 
-    <h4>WAFS moeilijk</h4>
-    <p>
-      <%= enquete.WAFSmoelijk %>
-    </p>
+      <h2>WAFS weken</h2>
+      <p>
+        <%= enquete.WAFSweken %>
+      </p>
 
-    <h4>WAFS uitleg</h4>
-    <p>
-      <%= enquete.WAFSuitleg %>
-    </p>
+      <h2>WAFS moeilijk</h2>
+      <p>
+        <%= enquete.WAFSmoelijk %>
+      </p>
 
-    <h4>WAFS snappen</h4>
-    <p>
-      <%= enquete.WAFSsnappen %>
-    </p>
+      <h2>WAFS uitleg</h2>
+      <p>
+        <%= enquete.WAFSuitleg %>
+      </p>
 
-    <h4>WAFS cijfer</h4>
-    <p>
-      <%= enquete.WAFScijfer %>
-    </p>
+      <h2>WAFS snappen</h2>
+      <p>
+        <%= enquete.WAFSsnappen %>
+      </p>
 
-    <!-- CSSttR -->
-    <h2>CSSttR</h2>
-    <p>
-      <%= enquete.CSSttRdocent %>
-    </p>
-    <p>
-      <%= enquete.CSSttRweken %>
-    </p>>
-    <p>
-      <%= enquete.CSSttRmoelijk %>
-    </p>
-    <p>
-      <%= enquete.CSSttRuitleg %>
-    </p>
-    <p>
-      <%= enquete.CSSttRsnappen %>
-    </p>
-    <p>
-      <%= enquete.CSSttRcijfer %>
-    </p>
+      <h2>WAFS cijfer</h2>
+      <p>
+        <%= enquete.WAFScijfer %>
+      </p>
 
-    <!-- PWA -->
-    <h2>PWA</h2>
-    <p>
-      <%= enquete.PWAdocent %>
-    </p>
-    <p>
-      <%= enquete.PWAweken %>
-    </p>
-    <p>
-      <%= enquete.PWAmoelijk %>
-    </p>
-    <p>
-      <%= enquete.PWAuitleg %>
-    </p>
-    <p>
-      <%= enquete.PWAsnappen %>
-    </p>
-    <p>
-      <%= enquete.PWAcijfer %>
-    </p>
+      <!-- CSSttR -->
+      <h1>CSSttR</h1>
+      <p>
+        <%= enquete.CSSttRdocent %>
+      </p>
+      <p>
+        <%= enquete.CSSttRweken %>
+      </p>>
+      <p>
+        <%= enquete.CSSttRmoelijk %>
+      </p>
+      <p>
+        <%= enquete.CSSttRuitleg %>
+      </p>
+      <p>
+        <%= enquete.CSSttRsnappen %>
+      </p>
+      <p>
+        <%= enquete.CSSttRcijfer %>
+      </p>
 
-    <!-- BT -->
-    <h2>BT</h2>
-    <p>
-      <%= enquete.BTdocent %>
-    </p>
-    <p>
-      <%= enquete.BTweken %>
-    </p>
-    <p>
-      <%= enquete.BTmoelijk %>
-    </p>
-    <p>
-      <%= enquete.BTuitleg %>
-    </p>
-    <p>
-      <%= enquete.BTsnappen %>
-    </p>
-    <p>
-      <%= enquete.BTcijfer %>
-    </p>
+      <!-- PWA -->
+      <h2>PWA</h2>
+      <p>
+        <%= enquete.PWAdocent %>
+      </p>
+      <p>
+        <%= enquete.PWAweken %>
+      </p>
+      <p>
+        <%= enquete.PWAmoelijk %>
+      </p>
+      <p>
+        <%= enquete.PWAuitleg %>
+      </p>
+      <p>
+        <%= enquete.PWAsnappen %>
+      </p>
+      <p>
+        <%= enquete.PWAcijfer %>
+      </p>
 
-    <!-- RTW -->
-    <h2>RTW</h2>
-    <p>
-      <%= enquete.RTWdocent %>
-    </p>
-    <p>
-      <%= enquete.RTWweken %>
-    </p>
-    <p>
-      <%= enquete.RTWmoelijk %>
-    </p>
-    <p>
-      <%= enquete.RTWuitleg %>
-    </p>
-    <p>
-      <%= enquete.RTWsnappen %>
-    </p>
-    <p>
-      <%= enquete.RTWcijfer %>
-    </p>
+      <!-- BT -->
+      <h2>BT</h2>
+      <p>
+        <%= enquete.BTdocent %>
+      </p>
+      <p>
+        <%= enquete.BTweken %>
+      </p>
+      <p>
+        <%= enquete.BTmoelijk %>
+      </p>
+      <p>
+        <%= enquete.BTuitleg %>
+      </p>
+      <p>
+        <%= enquete.BTsnappen %>
+      </p>
+      <p>
+        <%= enquete.BTcijfer %>
+      </p>
 
-    <!-- HCD -->
-    <h2>HCD</h2>
-    <p>
-      <%= enquete.HCDdocent %>
-    </p>
-    <p>
-      <%= enquete.HCDweken %>
-    </p>
-    <p>
-      <%= enquete.HCDmoelijk %>
-    </p>
-    <p>
-      <%= enquete.HCDuitleg %>
-    </p>
-    <p>
-      <%= enquete.HCDsnappen %>
-    </p>
-    <p>
-      <%= enquete.HCDcijfer %>
-    </p>
+      <!-- RTW -->
+      <h2>RTW</h2>
+      <p>
+        <%= enquete.RTWdocent %>
+      </p>
+      <p>
+        <%= enquete.RTWweken %>
+      </p>
+      <p>
+        <%= enquete.RTWmoelijk %>
+      </p>
+      <p>
+        <%= enquete.RTWuitleg %>
+      </p>
+      <p>
+        <%= enquete.RTWsnappen %>
+      </p>
+      <p>
+        <%= enquete.RTWcijfer %>
+      </p>
+
+      <!-- HCD -->
+      <h2>HCD</h2>
+      <p>
+        <%= enquete.HCDdocent %>
+      </p>
+      <p>
+        <%= enquete.HCDweken %>
+      </p>
+      <p>
+        <%= enquete.HCDmoelijk %>
+      </p>
+      <p>
+        <%= enquete.HCDuitleg %>
+      </p>
+      <p>
+        <%= enquete.HCDsnappen %>
+      </p>
+      <p>
+        <%= enquete.HCDcijfer %>
+      </p>
 
 
-  </div>
+    </div>
 
-  <%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %>

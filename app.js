@@ -24,12 +24,22 @@ app.set('view engine', 'ejs');
 
 
 // Routes
+const enqueteRoutes = require('./routes/enqueteRoutes')
 const endscreenRoutes = require('./routes/endscreenRoutes')
 const resultRoutes = require('./routes/resultRoutes')
 const errorRoutes = require('./routes/errorRoutes')
 
 
 // Routing
+app.use('/', enqueteRoutes);
+app.use('/enquete', enqueteRoutes);
+// app.use('/login', enqueteRoutes);
+// app.use('/wafs', enqueteRoutes);
+// app.use('/cssttr', enqueteRoutes);
+// app.use('/pwa', enqueteRoutes);
+// app.use('/bt', enqueteRoutes);
+// app.use('/rtw', enqueteRoutes);
+// app.use('/hcd', enqueteRoutes);
 app.use('/end', endscreenRoutes);
 app.use('/results', resultRoutes);
 app.use('/404', errorRoutes);
