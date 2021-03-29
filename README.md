@@ -419,6 +419,7 @@ This repository is licensed as [MIT](https://github.com/lisaoude/browser-technol
 - npm: node-fetch. (2020, September 5). Retrieved March 16, 2021, from [NPMjs.com](https://www.npmjs.com/package/node-fetch)
 - The Net Ninja. (2019). PWA Tutorial for Beginners. Retrieved March 22, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7)
 - npm: compression. (2019, March 18). Retrieved March 23, 2021, from [NPMjs.com](https://www.npmjs.com/package/compression) -->
+- Big thanks to [Jonah](https://github.com/theonejonahgold) for helping me with fixing the last steps of my personal localStorage hell & re-writing my JavaScript code to be about 10 times shorter
 
 
 
