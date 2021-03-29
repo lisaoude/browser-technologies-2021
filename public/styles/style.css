@@ -28,7 +28,7 @@ body {
 header {
   margin: 0 auto;
   width: 50%;
-  height: 3em;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -81,7 +81,7 @@ label {
 
 input[type=text],
 input[type=number] {
-  font-size: 1em;
+  font-size: 0.85em;
 }
 
 
@@ -92,7 +92,7 @@ input[type=submit] {
 }
 
 
-#login h1 {
+#login h1:nth-of-type(2) {
   margin-bottom: 0.5em;
 }
 
@@ -100,16 +100,20 @@ input[type=submit] {
 /******************************/
 /*         FIRST PAGE         */
 /******************************/
-li:nth-of-type(1) section {
+li:nth-of-type(1) fieldset {
   text-align: center;
 }
 
-li:nth-of-type(1) section h1 {
+li:nth-of-type(1) fieldset h1 {
   margin-bottom: 1em;
 }
 
-li:nth-of-type(1) section h2 {
+li:nth-of-type(1) fieldset h2 {
   margin-bottom: 4em;
+}
+
+li:nth-of-type(1) fieldset a {
+  align-self: center;
 }
 
 
@@ -119,10 +123,11 @@ li:nth-of-type(1) section h2 {
 /* full bar */
 span {
   position: absolute;
+  left: 1.25em;
   width: 84.5%;
   height: 1em;
   border-radius: 25px;
-  background-color: #D2D2D2;
+  background-color: #E0E0E0;
 }
 
 /* black bar */
@@ -163,10 +168,6 @@ span::before {
 
 .hcdVoortgang::before {
   width: 85%;
-}
-
-.endVoortgang::before {
-  width: 100%;
 }
 
 
@@ -217,12 +218,13 @@ li {
 /******************************/
 /*          SECTIONS          */
 /******************************/
-section:not(.carousel, .content) {
+fieldset {
   position: relative;
   top: 3em;
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-style: none;
 }
 
 .content {
@@ -247,12 +249,17 @@ input[type=text],
 input[type=number] {
   height: 2.25em;
   /* box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.25); */
-  background-color: #EEEEEE;
+  background-color: #E0E0E0;
   border-style: none;
   border-radius: 20px;
   padding: 2px 15px;
+}
+
+
+input[type=text] {
   margin-bottom: 1.5em;
 }
+
 
 input::placeholder {
   font-size: 0.85em;
@@ -263,7 +270,7 @@ input::placeholder {
 /******************************/
 /*    RADIO BUTTONS SECTION   */
 /******************************/
-section > div:first-of-type {
+fieldset > div {
   display: flex;
   flex-direction: column;
   margin: 1em 0;
@@ -279,11 +286,29 @@ input[type=submit] {
   height: 2rem;
   border-style: none;
   border-radius: 20px;
-  background-color: #EEEEEE;
-  margin: 0.5em 0 2em 0;
+  background-color: #E0E0E0;
+  margin: 1em 0 2em 0;
 }
 
-section > div:last-of-type {
+a {
+  width: 7rem;
+  height: 2rem;
+}
+
+fieldset > a:first-of-type {
+  position: relative;
+  top: 32px;
+  align-self: flex-start;
+}
+
+fieldset > a:last-of-type {
+  position: relative;
+  top: 0;
+  align-self: flex-end;
+  margin-bottom: 4em;
+}
+
+/* section > div:last-of-type {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -292,7 +317,7 @@ section > div:last-of-type {
 div:first-of-type {
   justify-content: center;
 
-}
+} */
 
 
 /******************************/
@@ -307,11 +332,38 @@ div:first-of-type {
   justify-content: start;
 }
 
+.end span {
+  left: 1.25em;
+}
+
+.endVoortgang::before {
+  width: 100%;
+  left: 0;
+}
+
+.endLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 2.5rem;
+  padding: 5px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: #7FCD7B;
+  text-decoration: none;
+  color: #000000;
+}
+
+.endLink p {
+  width: 7rem;
+}
+
 
 /******************************/
 /*           FOOTER           */
 /******************************/
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -319,37 +371,46 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 
 /******************************/
 /*         VALIDATION         */
 /******************************/
-/* text */
-input[type=text].correct {
+.valid {
   box-shadow: -3px 3px 0px rgba(127, 205, 123, 1);
 }
 
-input[type=text].wrong {
+.error {
   box-shadow: -3px 3px 0px rgba(255, 94, 94, 1);
 }
 
 
-/* regular buttons */
-input[type=button].correct {
-  background-color: #7FCD7B;
-}
+/******************************/
+/*        SMALL SCREEN        */
+/******************************/
 
-input[type=button].wrong {
-  background-color: #FF5E5E;
-}
+@media screen and (min-width: 440px) and (max-width: 680px) {
+  /* full bar */
+  span {
+    left: 3em;
+    width: 75%;
+  }
 
+  ol {
+    height: 40em;
+  }
 
-/* submit buttons */
-input[type=submit].correct {
-  background-color: #7FCD7B;
-}
+  li {
+    padding-left: 50px;
+  }
 
-input[type=submit].wrong {
-  background-color: #FF5E5E;
+  .content {
+    width: 90%;
+  }
+
+  .end span {
+    left: 3em;
+  }
+  
 }
