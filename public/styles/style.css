@@ -27,21 +27,22 @@ body {
 /******************************/
 header {
   margin: 0 auto;
-  width: 60%;
-  height: 4em;
+  width: 50%;
+  height: 3em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: -10px;
 }
 
 header svg {
-  width: 40px;
+  width: 35px;
   height: auto;
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0;
 }
 
@@ -60,15 +61,15 @@ button {
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 1.35em;
   font-weight: 600;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 h2 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 600;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 h3,
@@ -76,8 +77,8 @@ p,
 label {
   font-size: 1em;
   font-weight: 400;
-  /* color: blue; */
 }
+
 
 input[type=button],
 input[type=submit] {
@@ -86,10 +87,15 @@ input[type=submit] {
 }
 
 
+#index h1,
+#login h1 {
+  margin-bottom: 0.5em;
+}
+
 /******************************/
 /*        PROGRESS BAR        */
 /******************************/
-/* gray bar */
+/* full bar */
 span {
   position: absolute;
   width: 84.5%;
@@ -161,13 +167,14 @@ li {
 ol {
   margin: 0 auto;
   position: relative;
-  top: 4em;
+  top: 3em;
   display: flex;
   flex-direction: row;
   width: 80%;
-  height: 40em;
+  height: 43em;
   border-radius: 20px;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  /* overflow-x: scroll; */
   /* scroll-snap-type: x mandatory; */
 }
 
@@ -175,7 +182,7 @@ ol {
 li {
   position: relative;
   margin: 0 auto;
-  padding: 30px;
+  padding: 26px;
   flex: 0 0 85%;
   height: auto;
   display: flex;
@@ -185,11 +192,11 @@ li {
 }
 
 /* display none & block for navigation */
-/* li {
+/* li:not(li:first-of-type) {
   display: none;
-}
+} */
 
-:target {
+/* :target {
   display: block;
 } */
 
@@ -202,31 +209,34 @@ section:not(.carousel, .content) {
   top: 3em;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .content {
   background-color: hotpink;
-  width: 100%;
-  height: auto;
+  margin-top: 10px;
+  /* width: 100%;
+  height: auto; */
 }
 
 
 /******************************/
 /*           LABELS           */
 /******************************/
-/* label {
-
-} */
+label {
+  margin-bottom: 0.35em;
+}
 
 
 /******************************/
 /*        INPUT FIELDS        */
 /******************************/
 input[type=text] {
-  /* width: 95%; */
   height: 2em;
   box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.5em;
 }
+
 
 /******************************/
 /*           BUTTONS          */
