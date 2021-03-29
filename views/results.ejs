@@ -2,30 +2,32 @@
 
 <%- include('./partials/head.ejs') %>
 
-  <div>
-    <a href="/">home</a>
-  </div>
+  <%- include('./partials/header.ejs') %>
 
-  <div>
-    <h2> Alle Ingevulde Enquetes</h2>
+    <div>
+      <a href="/">home</a>
+    </div>
 
-    <% if (enquetes.length> 0) { %>
-      <% enquetes.forEach(enquete=> { %>
+    <div>
+      <h1> Alle Ingevulde Enquetes</h1>
 
-        <a href="/results/<%= enquete._id %>">
-          <h3>
-            <%= enquete.naam %>
-          </h3>
-          <h4>
-            <%= enquete.studentnummer %>
-          </h4>
-        </a>
+      <% if (enquetes.length> 0) { %>
+        <% enquetes.forEach(enquete=> { %>
 
-        <% }) %>
-          <% } else { %>
-            <p>Hier is niks</p>
-            <% } %>
+          <a href="/results/<%= enquete._id %>">
+            <h2>
+              <%= enquete.naam %>
+            </h2>
+            <h2>
+              <%= enquete.studentnummer %>
+            </h2>
+          </a>
 
-  </div>
+          <% }) %>
+            <% } else { %>
+              <p>Hier is niks</p>
+              <% } %>
 
-  <%- include('./partials/footer.ejs') %>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>

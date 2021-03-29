@@ -5,162 +5,130 @@ const Schema = mongoose.Schema;
 
 const enqueteSchema = new Schema({
   naam: {
-    type: String,
-    required: true
+    type: String
   },
   studentnummer: {
-    type: String,
-    required: true
+    type: String
   },
 
 
   WAFSdocent: {
-    type: String,
-    required: true
+    type: String
   },
   WAFSweken: {
-    type: String,
+    type: String
   },
   WAFSmoeilijk: {
-    type: String,
-    required: true
+    type: String
   },
   WAFSuitleg: {
-    type: String,
-    required: true
+    type: String
   },
   WAFSsnappen: {
-    type: String,
-    required: true
+    type: String
   },
   WAFScijfer: {
-    type: String,
-    required: true
+    type: String
   },
 
 
-  CSSttRdocent: {
-    type: String,
-    required: true
+  CSSTTRdocent: {
+    type: String
   },
-  CSSttRweken: {
-    type: String,
+  CSSTTRweken: {
+    type: String
   },
-  CSSttRmoeilijk: {
-    type: String,
-    required: true
+  CSSTTRmoeilijk: {
+    type: String
   },
-  CSSttRuitleg: {
-    type: String,
-    required: true
+  CSSTTRuitleg: {
+    type: String
   },
-  CSSttRsnappen: {
-    type: String,
-    required: true
+  CSSTTRsnappen: {
+    type: String
   },
-  CSSttRcijfer: {
-    type: String,
-    required: true
+  CSSTTRcijfer: {
+    type: String
   },
 
 
   PWAdocent: {
-    type: String,
-    required: true
+    type: String
   },
   PWAweken: {
     type: String,
   },
   PWAmoeilijk: {
-    type: String,
-    required: true
+    type: String
   },
   PWAuitleg: {
-    type: String,
-    required: true
+    type: String
   },
   PWAsnappen: {
-    type: String,
-    required: true
+    type: String
   },
   PWAcijfer: {
-    type: String,
-    required: true
+    type: String
   },
 
 
   BTdocent: {
-    type: String,
-    required: true
+    type: String
   },
   BTweken: {
-    type: String,
+    type: String
   },
   BTmoeilijk: {
-    type: String,
-    required: true
+    type: String
   },
   BTuitleg: {
-    type: String,
-    required: true
+    type: String
   },
   BTsnappen: {
-    type: String,
-    required: true
+    type: String
   },
   BTcijfer: {
-    type: String,
-    required: true
+    type: String
   },
 
 
   RTWdocent: {
-    type: String,
-    required: true
+    type: String
   },
   RTWweken: {
-    type: String,
+    type: String
   },
   RTWmoeilijk: {
-    type: String,
-    required: true
+    type: String
   },
   RTWuitleg: {
-    type: String,
-    required: true
+    type: String
   },
   RTWsnappen: {
-    type: String,
-    required: true
+    type: String
   },
   RTWcijfer: {
-    type: String,
-    required: true
+    type: String
   },
 
 
   HCDdocent: {
-    type: String,
-    required: true
+    type: String
   },
   HCDweken: {
-    type: String,
+    type: String
   },
   HCDmoeilijk: {
-    type: String,
-    required: true
+    type: String
   },
   HCDuitleg: {
-    type: String,
-    required: true
+    type: String
   },
   HCDsnappen: {
-    type: String,
-    required: true
+    type: String
   },
   HCDcijfer: {
-    type: String,
-    required: true
+    type: String
   }
 }, { timestamps: true });
 
