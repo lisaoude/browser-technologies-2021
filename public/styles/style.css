@@ -79,6 +79,11 @@ label {
   font-weight: 400;
 }
 
+input[type=text],
+input[type=number] {
+  font-size: 1em;
+}
+
 
 input[type=button],
 input[type=submit] {
@@ -87,10 +92,26 @@ input[type=submit] {
 }
 
 
-#index h1,
 #login h1 {
   margin-bottom: 0.5em;
 }
+
+
+/******************************/
+/*         FIRST PAGE         */
+/******************************/
+li:nth-of-type(1) section {
+  text-align: center;
+}
+
+li:nth-of-type(1) section h1 {
+  margin-bottom: 1em;
+}
+
+li:nth-of-type(1) section h2 {
+  margin-bottom: 4em;
+}
+
 
 /******************************/
 /*        PROGRESS BAR        */
@@ -171,7 +192,7 @@ ol {
   display: flex;
   flex-direction: row;
   width: 80%;
-  height: 43em;
+  height: 44em;
   border-radius: 20px;
   overflow-x: hidden;
   /* overflow-x: scroll; */
@@ -180,25 +201,17 @@ ol {
 
 /* list items */
 li {
+  background-color: #ffffff;
   position: relative;
   margin: 0 auto;
   padding: 26px;
-  flex: 0 0 85%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background-color: #ffffff;
+  flex: 0 0 85%;
+  /* height: 43em; */
+  overflow-y: scroll;
 }
-
-/* display none & block for navigation */
-/* li:not(li:first-of-type) {
-  display: none;
-} */
-
-/* :target {
-  display: block;
-} */
 
 
 /******************************/
@@ -213,7 +226,6 @@ section:not(.carousel, .content) {
 }
 
 .content {
-  background-color: hotpink;
   margin-top: 10px;
   /* width: 100%;
   height: auto; */
@@ -231,10 +243,30 @@ label {
 /******************************/
 /*        INPUT FIELDS        */
 /******************************/
-input[type=text] {
-  height: 2em;
-  box-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
+input[type=text],
+input[type=number] {
+  height: 2.25em;
+  /* box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.25); */
+  background-color: #EEEEEE;
+  border-style: none;
+  border-radius: 20px;
+  padding: 2px 15px;
   margin-bottom: 1.5em;
+}
+
+input::placeholder {
+  font-size: 0.85em;
+  color: #6F6F6F;
+}
+
+
+/******************************/
+/*    RADIO BUTTONS SECTION   */
+/******************************/
+section > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
 }
 
 
@@ -243,9 +275,23 @@ input[type=text] {
 /******************************/
 input[type=button],
 input[type=submit] {
-  width: 8rem;
+  width: 7rem;
   height: 2rem;
-  border-radius: 50px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: #EEEEEE;
+  margin: 0.5em 0 2em 0;
+}
+
+section > div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div:first-of-type {
+  justify-content: center;
+
 }
 
 
@@ -273,4 +319,37 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/******************************/
+/*         VALIDATION         */
+/******************************/
+/* text */
+input[type=text].correct {
+  box-shadow: -3px 3px 0px rgba(127, 205, 123, 1);
+}
+
+input[type=text].wrong {
+  box-shadow: -3px 3px 0px rgba(255, 94, 94, 1);
+}
+
+
+/* regular buttons */
+input[type=button].correct {
+  background-color: #7FCD7B;
+}
+
+input[type=button].wrong {
+  background-color: #FF5E5E;
+}
+
+
+/* submit buttons */
+input[type=submit].correct {
+  background-color: #7FCD7B;
+}
+
+input[type=submit].wrong {
+  background-color: #FF5E5E;
 }
