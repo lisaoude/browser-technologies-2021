@@ -33,6 +33,9 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
  -->
 
 
+<!-- Cut the mustard
+Ik trek een grens bij browsers die het gebruik van ES6 niet ondersteunen, dit geldt voor internet explorer en browsers ouder dan 2015. Het gebruik van let en const zorgt voor strictere code en onderandere het gebruik van arrow functions, dat code een stuk leesbaarder maakt. -->
+
 
 
 <!-------------------------- New Paragraph -------------------------->
