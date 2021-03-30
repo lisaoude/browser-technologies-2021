@@ -1,34 +1,41 @@
 <%- include('./partials/head.ejs') %>
 
-  <!-- <section class="carousel"> -->
-  <form method='post' action='/results'>
+  <body>
 
-    <ol>
+    <%- include('./partials/header.ejs') %>
 
-      <!---------- FIRST PAGE ----------->
-      <li id="index">
-        <%- include('./partials/header.ejs') %>
+      <main>
 
-          <fieldset>
-            <span class="endVoortgang"></span>
+        <!-- <section class="carousel"> -->
+        <form method='post' action='/results'>
 
-            <h1>Verzonden</h1>
-            <h2>Bedankt voor het invullen van de enquête!</h2>
+          <ol>
 
-            <a class='endLink' href="https://www.google.com/">
-              <p>Verder gaan met het leven</p>
-            </a>
-          </fieldset>
-      </li>
+            <!---------- END PAGE ----------->
+            <li id="index">
+              <fieldset>
+                <span class="endVoortgang"></span>
 
-    </ol>
+                <section>
 
-  </form>
+                  <h1>Verzonden!</h1>
+                  <h2>Bedankt voor het invullen van de enquête.</h2>
+
+                  <a class='endLink' href="https://www.google.com/">
+                    <p>Verder gaan met het leven</p>
+                  </a>
+                </section>
+              </fieldset>
+            </li>
+
+          </ol>
+
+        </form>
 
   </body>
 
-  <!-- <%- include('./partials/footer.ejs') %> -->
+  <%- include('./partials/footer.ejs') %>
 
-  </main>
+    </main>
 
-  </html>
+    </html>
