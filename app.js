@@ -32,14 +32,7 @@ const errorRoutes = require('./routes/errorRoutes')
 
 // Routing
 app.use('/', enqueteRoutes);
-// app.use('/enquete', enqueteRoutes);
-// app.use('/login', enqueteRoutes);
-// app.use('/wafs', enqueteRoutes);
-// app.use('/cssttr', enqueteRoutes);
-// app.use('/pwa', enqueteRoutes);
-// app.use('/bt', enqueteRoutes);
-// app.use('/rtw', enqueteRoutes);
-// app.use('/hcd', enqueteRoutes);
 app.use('/end', endscreenRoutes);
 app.use('/results', resultRoutes);
+app.use('/details', resultRoutes)
 app.use('/404', errorRoutes);
