@@ -22,9 +22,11 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 ## :interrobang: What does this Web App do?
 
 - Allow the user to fill out a survey, whether they have CSS and JS turned on or off
+- Always works - even when CSS and JS are not available
 - Save the user input to a database
-- Show the user input on a results page ('admin')
-- 
+- Show the user input on a results page ('admin')  
+
+**[My work can be viewed right here](https://enquete-bt.herokuapp.com/)**
 
 <br/> 
 
@@ -168,24 +170,32 @@ Last but definitely not least - JavaScript. This layer is meant to really enhanc
 
 </br>
 
-**Desktop - Chrome**
+**Desktop - Chrome**  
 ![desktop_chrome_js](https://user-images.githubusercontent.com/57795294/113063712-0a6e2c80-91b6-11eb-8bb9-e7df4ec18be5.gif)
 
 </br>
 
-**Desktop - Firefox**
+**Desktop - Firefox**  
 ![desktop_firefox_js](https://user-images.githubusercontent.com/57795294/113063756-1e199300-91b6-11eb-898b-1df9bd59a7ed.gif)
 
 </br>
 
-**Mobile - Chrome (Android)**
+**Mobile - Chrome (Android)**  
 ![mobile_chrome_js](https://user-images.githubusercontent.com/57795294/113063827-34275380-91b6-11eb-8191-f72d3672860e.gif)
 
 </br>
 
-**Mobile - Safari (iOS)**
+**Mobile - Safari (iOS)**  
 ![mobile_safari_js](https://user-images.githubusercontent.com/57795294/113063942-6afd6980-91b6-11eb-86e2-cf7001334588.gif)
 
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## TBD: Flow
 
 <br/>
 
@@ -200,7 +210,9 @@ Last but definitely not least - JavaScript. This layer is meant to really enhanc
 Before we can get started, we'll need to clone this repo.
 This can be done by typing the following line of code into your terminal:
 
-`git clone https://github.com/lisaoude/gifinder-pwa.git`
+```
+git clone https://github.com/lisaoude/gifinder-pwa.git
+```
 
 <br/>
 
@@ -208,7 +220,9 @@ This can be done by typing the following line of code into your terminal:
 
 Next, we will have to install the used packages.
 
-`npm install `
+```
+npm install
+```
 
 <br/>
 
@@ -216,7 +230,9 @@ Next, we will have to install the used packages.
 
 This can be done by typing the following line of code into your terminal:
 
-`npm run start`
+```
+npm run start
+```
 
 <br/>
 
@@ -224,7 +240,9 @@ This can be done by typing the following line of code into your terminal:
 
 Almost done! We just need to navigate to the localhost in the browser.
 
-`https://localhost:3000/`
+```
+https://localhost:3000/
+```
 
 <br/>
 
@@ -249,5 +267,7 @@ This repository is licensed as [MIT](https://github.com/lisaoude/browser-technol
 - Installing Express. (2021). Retrieved March 8, 2021, from [Expressjs.com](http://expressjs.com/en/starter/installing.html)
 - The Net Ninja. (2020).  Node.js Crash Course Tutorial. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
 - npm: ejs. (2021, February 6). Retrieved March 9, 2021, from [NPMjs.com](https://www.npmjs.com/package/ejs)
+- Web Dev Simplified. (2019, June 18). JavaScript Form Validation. Retrieved March 24, 2021, from [YouTube](https://www.youtube.com/watch?v=In0nB0ABaUk&t=307s)
+- Thomas Bradley. (2015, September 5). Progressive enhancement: cutting the mustard. Retrieved March 24, 2021, from [YouTube](https://www.youtube.com/watch?v=zbMJtxDD-4I)
 - Big thanks to [Jonah](https://github.com/theonejonahgold) for helping me with fixing the last steps of my personal localStorage hell & helping me re-write my localStorage code to be about 10 times shorter
 
