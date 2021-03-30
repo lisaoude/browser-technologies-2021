@@ -3,7 +3,7 @@
 _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 
-[Chrome_CSS](https://gph.is/g/ZY8PPk3)
+![Chrome_CSS](https://gph.is/g/ZY8PPk3)
 
 <!-------------------------- New Paragraph -------------------------->
 
