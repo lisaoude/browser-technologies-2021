@@ -77,7 +77,7 @@ inputText.forEach(input => {
 
       // if not empty, remove error class & add valid class
     } else {
-      input.classList.remove('error-text')
+      input.classList.remove('error')
       input.classList.add('valid')
     }
   })
@@ -93,7 +93,7 @@ inputNumber.forEach(input => {
 
     // if empty, add error class
     if (input.value === '' || input.value == null) {
-      input.classList.add('error-text')
+      input.classList.add('error')
 
       // if not empty, remove error class & add valid class
     } else {
