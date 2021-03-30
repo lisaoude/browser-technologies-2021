@@ -1,0 +1,89 @@
+/******************************/
+/*           GENERAL          */
+/******************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body */
+body {
+  background-color: #34A8E0;
+  background: linear-gradient(180deg, #34A8E0 60.94%, #3AAA34 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+
+/* main */
+main {
+  width: 100%;
+  height: auto;
+}
+
+
+/******************************/
+/*            FORM            */
+/******************************/
+form {
+  position: relative;
+  top: 3em;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/******************************/
+/*             LIST           */
+/******************************/
+ol {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30em; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40em;
+  border-radius: 20px;
+  overflow-x: hidden;
+}
+
+
+/******************************/
+/*         LIST ITEMS         */
+/******************************/
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+
+/******************************/
+/*           HEADER          */
+/******************************/
+
+
+
+/******************************/
+/*           FIELDSET          */
+/******************************/
+fieldset {
+  border: none;
+}
+
+
+/******************************/
+/*        PROGRESS BAR        */
+/******************************/
