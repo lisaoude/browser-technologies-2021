@@ -2,52 +2,31 @@
 
 _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
-
 <!-------------------------- New Paragraph -------------------------->
 
 ## :pushpin: Table of Contents
 
-<!-- - [What does this Web App do?](#gem-What-does-this-Web-App-do?) -->
-
-<!-- - [API](#link-API)
-- [Used Packages](#gift-Used-Packages)
+- [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
+- [Features & Enhancements](#gem-Features-&-Enhancements)
+- [Testing & Layers](#mag-Testing-&-Layers)
 - [Install](#inbox_tray-Install)
-- [Next Steps](#telescope-Next-Steps)
 - [License](#closed_lock_with_key-License)
-- [Sources](#books-Sources) -->
+- [Sources](#books-Sources)
 
 <br/>
 
 ---
 
-<!-- features
- 
- saving data to database
- pure CSS progress bar
- localStorage
- form validation
- slider 
- 
- 
- -->
-
-
-<!-- Cut the mustard
-Ik trek een grens bij browsers die het gebruik van ES6 niet ondersteunen, dit geldt voor internet explorer en browsers ouder dan 2015. Het gebruik van let en const zorgt voor strictere code en onderandere het gebruik van arrow functions, dat code een stuk leesbaarder maakt. -->
-
-
-
 <!-------------------------- New Paragraph -------------------------->
 
-<!-- ## :interrobang: What does this Web App do?
+## :interrobang: What does this Web App do?
 
-- Fetch & show the trending GIFs on load
-- Fetch & show the user GIFs based on the value they haved typed into the input field
-- Fetch & show the user the details of a GIF they clicked on
-- Provide the user with feedback while the content is loading
-- Provide the user with feedback when hovering over a GIF
+- Allow the user to fill out a survey, whether they have CSS and JS turned on or off
+- Save the user input to a database
+- Show the user input on a results page ('admin')
+- 
 
-<br/>  -->
+<br/> 
 
 ---
 
@@ -79,8 +58,13 @@ I tested my website in the following browsers:
 - iOS: Safari
 - Android: Chrome
 
+
+<!-- ### :hocho: Cutting the mustard
+I draw the line at browsers that don't support JS ES6, which is Internet Explorer and browsers older than 2015. Using ```let``` and ```const``` results in more strict and clean code and the use of arrow functions, which makes the code much more readable. -->
+
+
 ### :computer: What did I do in my code?
-To make sure that all my styling and added features worked in all browsers named above, I added some fallbacks or extra lines of code.  
+Before using a CSS variable, I checked [caniuse.com](www.caniuse.com) to see if the variable I was planning on using was supported by the browsers I'm testing my website in. To make sure that all my styling and added features worked in all browsers named above, I added some fallbacks or extra lines of code.  
 
 </br>
 
@@ -107,6 +91,21 @@ Another example is the extra line of code that I added in order to remove the de
 
 </br>
 
+### Accessibility
+During development, I used Chrome Lighthouse to check how my Accessibility & Best Practices were looking. The only accessibility issues Lighthouse is able to find, is that I use multiple h3's in my form (as a heading for my section with three radio buttons). I'll take it!  
+
+![image](https://user-images.githubusercontent.com/57795294/113069165-06dfa300-91c0-11eb-9695-61160a853ed7.png)
+
+</br>
+
+I also chose to give my background a gradient (with a fallback), but keep the actual form white with black text. This combination results in the highest color contrast, ensuring that it's as accessible as far as colors go.
+
+
+
+
+
+</br>
+
 ### Layers
 In order to write a progressively enhanced website, you write your code in three layers: first comes HTML, secondly you add a layer of CSS to that and lastly you enhance the experience with a layer of JavaScript.  
 
@@ -118,22 +117,22 @@ I started my app by writing semantic HTML, making the website's core as user fri
 
 </br>
 
-**Desktop - Chrome**
+**Desktop - Chrome**  
 ![desktop_chrome_html](https://user-images.githubusercontent.com/57795294/113063690-03471e80-91b6-11eb-9f00-0889f659fb0e.gif)
 
 </br>
 
-**Desktop - Firefox**
+**Desktop - Firefox**  
 ![desktop_firefox_html](https://user-images.githubusercontent.com/57795294/113063742-1823b200-91b6-11eb-89dc-560ea4bb5d73.gif)
 
 </br>
 
-**Mobile - Chrome (Android)**
+**Mobile - Chrome (Android)**  
 ![mobile_chrome_html)](https://user-images.githubusercontent.com/57795294/113063806-2d004580-91b6-11eb-9985-6ef2ad7a4e38.gif)
 
 </br>
 
-**Mobile - Safari (iOS)**
+**Mobile - Safari (iOS)**  
 ![mobile_safari_html](https://user-images.githubusercontent.com/57795294/113063926-62a52e80-91b6-11eb-984e-86490c793b39.gif)
 
 
@@ -144,22 +143,22 @@ Next, I added my CSS. I gave each course their own 'page' to make the survey pro
 
 </br>
 
-**Desktop - Chrome**
+**Desktop - Chrome**  
 ![desktop_chrome_css](https://user-images.githubusercontent.com/57795294/113063520-bd8a5600-91b5-11eb-8c1c-713bab80ca84.gif)
 
 </br>
 
-**Desktop - Firefox**
+**Desktop - Firefox**  
 ![desktop_firefox_css](https://user-images.githubusercontent.com/57795294/113063730-122dd100-91b6-11eb-925e-fb173563934b.gif)
 
 </br>
 
-**Mobile - Chrome (Android)**
+**Mobile - Chrome (Android)**  
 ![mobile_chrome_css](https://user-images.githubusercontent.com/57795294/113063778-2671ce00-91b6-11eb-977f-ca30e7c57bd2.gif)
 
 </br>
 
-**Mobile - Safari (iOS)**
+**Mobile - Safari (iOS)**  
 ![mobile_safari_css](https://user-images.githubusercontent.com/57795294/113063905-57520300-91b6-11eb-8815-b2fd59a4aaeb.gif)
 
 </br>
@@ -194,7 +193,7 @@ Last but definitely not least - JavaScript. This layer is meant to really enhanc
 
 <!-------------------------- New Paragraph -------------------------->
 
-<!-- ## :inbox_tray: Install
+## :inbox_tray: Install
 
 ### 1. :dancers: Cone this repo
 
@@ -213,48 +212,19 @@ Next, we will have to install the used packages.
 
 <br/>
 
-### 3. :arrow_forward: Start local dev environment
+### 3. :arrow_forward: Start app.js
 
 This can be done by typing the following line of code into your terminal:
 
-`npm run dev`
+`npm run start`
 
 <br/>
 
-### 4. :european_post_office: Build export
+### 4. :globe_with_meridians: Navigate to local host
 
 Almost done! We just need to navigate to the localhost in the browser.
 
-`npm run build`
-
-<br/> -->
-
----
-
-<!-------------------------- New Paragraph -------------------------->
-
-<!-- ## :telescope: Next Steps
-
-We all know creative developing projects are never _truly_ done..  
-These are some next steps that I would love to make:
-
-- [ ] Make it possible to let the users search for GIFs -->
-
-<!-- - Make it possible for the user to save gifs, in the following ways:
-
-  - Save the gifs to a favorites list
-  - Save the gifs to a special collection, which the user can name themselves (e.g. funny gifs, cat gifs, etc.)
-  - Save the gifs to their device (download)
-
-- Give Gifinder a random mode
-
-  - Returns a random GIF o the user after a button press
-
-- Autocomplete user input with a list of valid terms that completes what the user has typed into the input field
-
-- Provide users with a list of GIF categories
-- Provide users with a list of the trending search terms
-- Suggest searches to users -->
+`https://localhost:3000/`
 
 <br/>
 
@@ -279,5 +249,5 @@ This repository is licensed as [MIT](https://github.com/lisaoude/browser-technol
 - Installing Express. (2021). Retrieved March 8, 2021, from [Expressjs.com](http://expressjs.com/en/starter/installing.html)
 - The Net Ninja. (2020).  Node.js Crash Course Tutorial. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
 - npm: ejs. (2021, February 6). Retrieved March 9, 2021, from [NPMjs.com](https://www.npmjs.com/package/ejs)
-- Big thanks to [Jonah](https://github.com/theonejonahgold) for helping me with fixing the last steps of my personal localStorage hell & re-writing my localStorage JavaScript code to be about 10 times shorter
+- Big thanks to [Jonah](https://github.com/theonejonahgold) for helping me with fixing the last steps of my personal localStorage hell & helping me re-write my localStorage code to be about 10 times shorter
 
