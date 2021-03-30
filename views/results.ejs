@@ -1,38 +1,52 @@
-<!-- Completed surveys - just name & studentnumber -->
-
 <%- include('./partials/head.ejs') %>
 
-  <%- include('./partials/header.ejs') %>
+  <body>
 
-    <div>
-      <a href="/">home</a>
-    </div>
+    <%- include('./partials/header.ejs') %>
 
-    <div>
-      <h1> Alle Ingevulde Enquetes</h1>
+      <main>
 
-      <% if (enquetes.length> 0) { %>
-        <% enquetes.forEach(enquete=> { %>
+        <form>
 
-          <a href="/results/<%= enquete._id %>">
-            <h2>
-              <%= enquete.naam %>
-            </h2>
-            <h2>
-              <%= enquete.studentnummer %>
-            </h2>
-          </a>
+          <ol>
 
-          <% }) %>
-            <% } else { %>
-              <p>Hier is niks</p>
-              <% } %>
+            <!---------- FIRST PAGE ----------->
+            <li id="results">
+              <fieldset>
+                <section>
+                  <h1>Alle Ingevulde Enquêtes</h1>
 
-    </div>
+                  <% if (enquetes.length> 0) { %>
+                    <% enquetes.forEach(enquete=> { %>
 
-    <!-- <%- include('./partials/footer.ejs') %> -->
+                      <div>
+                        <a href="/results/<%= enquete._id %>">
+                          <h2>
+                            <%= enquete.naam %>
+                          </h2>
+                          <h2>
+                            <%= enquete.studentnummer %>
+                          </h2>
+                        </a>
+                      </div>
+
+                      <% }) %>
+                        <% } else { %>
+                          <p>Looking empty..</p>
+                          <% } %>
+
+                </section>
+              </fieldset>
+            </li>
+
+          </ol>
+
+        </form>
+
+  </body>
+
+  <%- include('./partials/footer.ejs') %>
 
     </main>
-    </body>
 
     </html>

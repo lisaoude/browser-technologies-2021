@@ -1,165 +1,253 @@
-<!-- Completed surveys - details (all) -->
-
-<!-- only WAFS is complete for now (h4 added) -->
-
 <%- include('./partials/head.ejs') %>
 
-  <%- include('./partials/header.ejs') %>
+  <body>
 
-    <div>
+    <%- include('./partials/header.ejs') %>
 
-      <!-- Algemeen -->
-      <h1>Algemeen</h1>
-      <h2>
-        <%= enquete.naam %>
-      </h2>
-      <h2>
-        <%= enquete.studentnummer %>
-      </h2>
+      <main>
 
-      <!-- WAFS -->
-      <h1>WAFS</h1>
-      <h2>WAFS docent</h2>
-      <p>
-        <%= enquete.WAFSdocent %>
-      </p>
+        <form>
 
-      <h2>WAFS weken</h2>
-      <p>
-        <%= enquete.WAFSweken %>
-      </p>
+          <ol>
 
-      <h2>WAFS moeilijk</h2>
-      <p>
-        <%= enquete.WAFSmoelijk %>
-      </p>
+            <li id="details">
+              <fieldset>
+                <section>
 
-      <h2>WAFS uitleg</h2>
-      <p>
-        <%= enquete.WAFSuitleg %>
-      </p>
+                  <a href="/results">Terug naar resultaten</a>
 
-      <h2>WAFS snappen</h2>
-      <p>
-        <%= enquete.WAFSsnappen %>
-      </p>
+                  <div>
+                    <h1>
+                      <%= enquete.naam %>
+                    </h1>
 
-      <h2>WAFS cijfer</h2>
-      <p>
-        <%= enquete.WAFScijfer %>
-      </p>
-
-      <!-- CSSttR -->
-      <h1>CSSttR</h1>
-      <p>
-        <%= enquete.CSSttRdocent %>
-      </p>
-      <p>
-        <%= enquete.CSSttRweken %>
-      </p>>
-      <p>
-        <%= enquete.CSSttRmoelijk %>
-      </p>
-      <p>
-        <%= enquete.CSSttRuitleg %>
-      </p>
-      <p>
-        <%= enquete.CSSttRsnappen %>
-      </p>
-      <p>
-        <%= enquete.CSSttRcijfer %>
-      </p>
-
-      <!-- PWA -->
-      <h2>PWA</h2>
-      <p>
-        <%= enquete.PWAdocent %>
-      </p>
-      <p>
-        <%= enquete.PWAweken %>
-      </p>
-      <p>
-        <%= enquete.PWAmoelijk %>
-      </p>
-      <p>
-        <%= enquete.PWAuitleg %>
-      </p>
-      <p>
-        <%= enquete.PWAsnappen %>
-      </p>
-      <p>
-        <%= enquete.PWAcijfer %>
-      </p>
-
-      <!-- BT -->
-      <h2>BT</h2>
-      <p>
-        <%= enquete.BTdocent %>
-      </p>
-      <p>
-        <%= enquete.BTweken %>
-      </p>
-      <p>
-        <%= enquete.BTmoelijk %>
-      </p>
-      <p>
-        <%= enquete.BTuitleg %>
-      </p>
-      <p>
-        <%= enquete.BTsnappen %>
-      </p>
-      <p>
-        <%= enquete.BTcijfer %>
-      </p>
-
-      <!-- RTW -->
-      <h2>RTW</h2>
-      <p>
-        <%= enquete.RTWdocent %>
-      </p>
-      <p>
-        <%= enquete.RTWweken %>
-      </p>
-      <p>
-        <%= enquete.RTWmoelijk %>
-      </p>
-      <p>
-        <%= enquete.RTWuitleg %>
-      </p>
-      <p>
-        <%= enquete.RTWsnappen %>
-      </p>
-      <p>
-        <%= enquete.RTWcijfer %>
-      </p>
-
-      <!-- HCD -->
-      <h2>HCD</h2>
-      <p>
-        <%= enquete.HCDdocent %>
-      </p>
-      <p>
-        <%= enquete.HCDweken %>
-      </p>
-      <p>
-        <%= enquete.HCDmoelijk %>
-      </p>
-      <p>
-        <%= enquete.HCDuitleg %>
-      </p>
-      <p>
-        <%= enquete.HCDsnappen %>
-      </p>
-      <p>
-        <%= enquete.HCDcijfer %>
-      </p>
+                    <h1>
+                      <%= enquete.studentnummer %>
+                    </h1>
+                  </div>
 
 
-    </div>
+                  <!-- WAFS -->
+                  <div>
+                    <h1>WAFS</h1>
+                    <h2>WAFS docent</h2>
+                    <p>
+                      <%= enquete.WAFSdocent %>
+                    </p>
 
-    <!-- <%- include('./partials/footer.ejs') %> -->
+                    <h2>WAFS weken</h2>
+                    <p>
+                      <%= enquete.WAFSweken %>
+                    </p>
+
+                    <h2>WAFS moeilijk</h2>
+                    <p>
+                      <%= enquete.WAFSmoeilijk %>
+                    </p>
+
+                    <h2>WAFS uitleg</h2>
+                    <p>
+                      <%= enquete.WAFSuitleg %>
+                    </p>
+
+                    <h2>WAFS snappen</h2>
+                    <p>
+                      <%= enquete.WAFSsnappen %>
+                    </p>
+
+                    <h2>WAFS cijfer</h2>
+                    <p>
+                      <%= enquete.WAFScijfer %>
+                    </p>
+                  </div>
+
+
+                  <!-- WAFS -->
+                  <div>
+                    <h1>CSSTTR</h1>
+                    <h2>CSSTTR docent</h2>
+                    <p>
+                      <%= enquete.CSSTTRdocent %>
+                    </p>
+
+                    <h2>CSSTTR weken</h2>
+                    <p>
+                      <%= enquete.CSSTTRweken %>
+                    </p>
+
+                    <h2>CSSTTR moeilijk</h2>
+                    <p>
+                      <%= enquete.CSSTTRmoeilijk %>
+                    </p>
+
+                    <h2>CSSTTR uitleg</h2>
+                    <p>
+                      <%= enquete.CSSTTRuitleg %>
+                    </p>
+
+                    <h2>CSSTTR snappen</h2>
+                    <p>
+                      <%= enquete.CSSTTRsnappen %>
+                    </p>
+
+                    <h2>CSSTTR cijfer</h2>
+                    <p>
+                      <%= enquete.CSSTTRcijfer %>
+                    </p>
+                  </div>
+
+
+                  <!-- PWA -->
+                  <div>
+                    <h1>PWA</h1>
+                    <h2>PWA docent</h2>
+                    <p>
+                      <%= enquete.PWAdocent %>
+                    </p>
+
+                    <h2>PWA weken</h2>
+                    <p>
+                      <%= enquete.PWAweken %>
+                    </p>
+
+                    <h2>PWA moeilijk</h2>
+                    <p>
+                      <%= enquete.PWAmoeilijk %>
+                    </p>
+
+                    <h2>PWA uitleg</h2>
+                    <p>
+                      <%= enquete.PWAuitleg %>
+                    </p>
+
+                    <h2>PWA snappen</h2>
+                    <p>
+                      <%= enquete.PWAsnappen %>
+                    </p>
+
+                    <h2>PWA cijfer</h2>
+                    <p>
+                      <%= enquete.PWAcijfer %>
+                    </p>
+                  </div>
+
+
+                  <!-- BT -->
+                  <div>
+                    <h1>BT</h1>
+                    <h2>BT docent</h2>
+                    <p>
+                      <%= enquete.BTdocent %>
+                    </p>
+
+                    <h2>BT weken</h2>
+                    <p>
+                      <%= enquete.BTweken %>
+                    </p>
+
+                    <h2>BT moeilijk</h2>
+                    <p>
+                      <%= enquete.BTmoeilijk %>
+                    </p>
+
+                    <h2>BT uitleg</h2>
+                    <p>
+                      <%= enquete.BTuitleg %>
+                    </p>
+
+                    <h2>BT snappen</h2>
+                    <p>
+                      <%= enquete.BTsnappen %>
+                    </p>
+
+                    <h2>BT cijfer</h2>
+                    <p>
+                      <%= enquete.BTcijfer %>
+                    </p>
+                  </div>
+
+
+                  <!-- RTW -->
+                  <div>
+                    <h1>RTW</h1>
+                    <h2>RTW docent</h2>
+                    <p>
+                      <%= enquete.RTWdocent %>
+                    </p>
+
+                    <h2>RTW weken</h2>
+                    <p>
+                      <%= enquete.RTWweken %>
+                    </p>
+
+                    <h2>RTW moeilijk</h2>
+                    <p>
+                      <%= enquete.RTWmoeilijk %>
+                    </p>
+
+                    <h2>RTW uitleg</h2>
+                    <p>
+                      <%= enquete.RTWuitleg %>
+                    </p>
+
+                    <h2>RTW snappen</h2>
+                    <p>
+                      <%= enquete.RTWsnappen %>
+                    </p>
+
+                    <h2>RTW cijfer</h2>
+                    <p>
+                      <%= enquete.RTWcijfer %>
+                    </p>
+                  </div>
+
+
+                  <!-- HCD -->
+                  <div>
+                    <h1>HCD</h1>
+                    <h2>HCD docent</h2>
+                    <p>
+                      <%= enquete.HCDdocent %>
+                    </p>
+
+                    <h2>HCD weken</h2>
+                    <p>
+                      <%= enquete.HCDweken %>
+                    </p>
+
+                    <h2>HCD moeilijk</h2>
+                    <p>
+                      <%= enquete.HCDmoeilijk %>
+                    </p>
+
+                    <h2>HCD uitleg</h2>
+                    <p>
+                      <%= enquete.HCDuitleg %>
+                    </p>
+
+                    <h2>HCD snappen</h2>
+                    <p>
+                      <%= enquete.HCDsnappen %>
+                    </p>
+
+                    <h2>HCD cijfer</h2>
+                    <p>
+                      <%= enquete.HCDcijfer %>
+                    </p>
+                  </div>
+
+                </section>
+              </fieldset>
+            </li>
+
+          </ol>
+
+        </form>
+
+  </body>
+
+  <%- include('./partials/footer.ejs') %>
 
     </main>
-    </body>
 
     </html>
