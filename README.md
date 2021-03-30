@@ -3,8 +3,6 @@
 _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 
-![Chrome_CSS](https://gph.is/g/ZY8PPk3)
-
 <!-------------------------- New Paragraph -------------------------->
 
 ## :pushpin: Table of Contents
@@ -50,6 +48,27 @@ Ik trek een grens bij browsers die het gebruik van ES6 niet ondersteunen, dit ge
 - Provide the user with feedback when hovering over a GIF
 
 <br/>  -->
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :inbox_tray: Install
+
+![desktop_chrome_css](https://user-images.githubusercontent.com/57795294/113063520-bd8a5600-91b5-11eb-8c1c-713bab80ca84.gif)
+![desktop_chrome_html](https://user-images.githubusercontent.com/57795294/113063690-03471e80-91b6-11eb-9f00-0889f659fb0e.gif)
+![desktop_chrome_js](https://user-images.githubusercontent.com/57795294/113063712-0a6e2c80-91b6-11eb-8bb9-e7df4ec18be5.gif)
+![desktop_firefox_css](https://user-images.githubusercontent.com/57795294/113063730-122dd100-91b6-11eb-925e-fb173563934b.gif)
+![desktop_firefox_html](https://user-images.githubusercontent.com/57795294/113063742-1823b200-91b6-11eb-89dc-560ea4bb5d73.gif)
+![desktop_firefox_js](https://user-images.githubusercontent.com/57795294/113063756-1e199300-91b6-11eb-898b-1df9bd59a7ed.gif)
+![mobile_chrome_css](https://user-images.githubusercontent.com/57795294/113063778-2671ce00-91b6-11eb-977f-ca30e7c57bd2.gif)
+![mobile_chrome_html)](https://user-images.githubusercontent.com/57795294/113063806-2d004580-91b6-11eb-9985-6ef2ad7a4e38.gif)
+![mobile_chrome_js](https://user-images.githubusercontent.com/57795294/113063827-34275380-91b6-11eb-8191-f72d3672860e.gif)
+![mobile_safari_css](https://user-images.githubusercontent.com/57795294/113063905-57520300-91b6-11eb-8815-b2fd59a4aaeb.gif)
+![mobile_safari_html](https://user-images.githubusercontent.com/57795294/113063926-62a52e80-91b6-11eb-984e-86490c793b39.gif)
+![mobile_safari_js](https://user-images.githubusercontent.com/57795294/113063942-6afd6980-91b6-11eb-86e2-cf7001334588.gif)
+
+<br/>
 
 ---
 
