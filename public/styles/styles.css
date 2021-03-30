@@ -393,10 +393,18 @@ section > a:last-of-type {
 /******************************/
 .valid {
   box-shadow: -3px 3px 0px rgba(127, 205, 123, 1);
+  
+  /* safari styles */
+  -webkit-appearance: none;
+  -webkit-boxshadow: -3px 3px 0px rgba(127, 205, 123, 1);
 }
 
 .error {
   box-shadow: -3px 3px 0px rgba(255, 94, 94, 1);
+
+  /* safari styles */
+  -webkit-appearance: none;
+  -webkit-boxshadow: -3px 3px 0px rgba(255, 94, 94, 1);
 }
 
 
