@@ -61,7 +61,7 @@ Ik trek een grens bij browsers die het gebruik van ES6 niet ondersteunen, dit ge
 ![desktop_firefox_css](https://user-images.githubusercontent.com/57795294/113063730-122dd100-91b6-11eb-925e-fb173563934b.gif)
 ![desktop_firefox_html](https://user-images.githubusercontent.com/57795294/113063742-1823b200-91b6-11eb-89dc-560ea4bb5d73.gif)
 ![desktop_firefox_js](https://user-images.githubusercontent.com/57795294/113063756-1e199300-91b6-11eb-898b-1df9bd59a7ed.gif)
-![mobile_chrome_css](https://user-images.githubusercontent.com/57795294/113063778-2671ce00-91b6-11eb-977f-ca30e7c57bd2.gif | width=100)
+![mobile_chrome_css](https://user-images.githubusercontent.com/57795294/113063778-2671ce00-91b6-11eb-977f-ca30e7c57bd2.gif&s=100)
 ![mobile_chrome_html)](https://user-images.githubusercontent.com/57795294/113063806-2d004580-91b6-11eb-9985-6ef2ad7a4e38.gif)
 ![mobile_chrome_js](https://user-images.githubusercontent.com/57795294/113063827-34275380-91b6-11eb-8191-f72d3672860e.gif)
 ![mobile_safari_css](https://user-images.githubusercontent.com/57795294/113063905-57520300-91b6-11eb-8815-b2fd59a4aaeb.gif)
