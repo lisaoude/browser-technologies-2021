@@ -125,7 +125,7 @@ I also chose to give my background a gradient (with a fallback), but keep the ac
 
 </br>
 
-### Layers
+### :zap: Layers
 In order to write a progressively enhanced website, you write your code in three layers: first comes HTML, secondly you add a layer of CSS to that and lastly you enhance the experience with a layer of JavaScript.  
 
 #### Core
