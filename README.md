@@ -26,12 +26,13 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
   - [Accessibility](#crown-Accessibility)
   - [Layers](#zap-Layers)
   - [Error testing](#red_circle-Error-testing)
+  - [Error prevention](#heavy_exclamation_mark-Error-prevention)
 
 </br>
 
 - [Flow](#wavy_dash-Flow)
 - [Next steps for this project](#telescope-Next-steps-for-this-project)
-- [Take aways for my next project](#pizza-ramen-Take-aways-for-my-next-project)
+- [Take aways for my next project](#pizza-Take-aways-for-my-next-project)
 - [Install](#inbox_tray-Install)
 - [License](#closed_lock_with_key-License)
 - [Sources](#books-Sources)
@@ -112,9 +113,32 @@ I have added the following features & enhancements to my website:
 <!-------------------------- New Paragraph -------------------------->
 
 ## :electric_plug: npm install progressive-enhancement
-(layers)
+```
+npm install progressive-enhancement
+```  
 
-<br/>
+If only it were that easy.. I'm sure many developers would love for this to be an installable package, but for now we have to actually use our own brains to figure it out :brain::wrench:. It hurts..  
+
+</br>
+
+In order to make my website progressively enhanced, I wrote my code in three layers: first comes HTML secondly you add a layer of CSS to that and lastly you enhance the experience with a layer of JavaScript.
+
+</br>
+
+#### HTML
+I started my app by writing semantic HTML, making the website's core as user friendly as possibly can be achieved with only HTML. I tested this HTML in my four browsers. In all four of the browsers, the HTML works exactly as intended. Even the naviagtion still works, because I used anchors!
+
+</br>
+
+#### CSS
+Next, I added my CSS. I gave each course their own 'page' to make the survey progressively disclosed and easier to fill out, because the user needs to only focus on one course at a time. The navigation for this layout is HTML & CSS only, so it doesn't need any JavaScript to work. I did this, so the user has the most optimal layout, even if they may have JavaScript turned off. Another enhancement that gets enabled once CSS does, is a progress bar being shown to the user on each page as well. I made sure to let the progress bar work without JavaScript, because I show each course on their own 'page' and without a progress bar the survey can start to feel like it's never ending.
+
+</br>
+
+#### JavaScript
+Last but definitely not least - JavaScript. This layer is meant to really enhance the overall user experience. When JavaScript in enabled, the user input is stored in localStorage, so they can close the window and return to the survey later. Another features that works once JavaScript is enabled, is form validation. The form validations works together with the CSS, by checking if the user has entered something inside an input field and adding the correct class to that input field once they leave that field.
+
+</br>
 
 ---
 
@@ -189,7 +213,7 @@ By rendering my HTML server-side, I am able to save all user input to a database
 </br>
 
 #### HTML
-I started my app by writing semantic HTML, making the website's core as user friendly as possibly can be achieved with only HTML. I tested this HTML in my four browsers. In all four of the browsers, the HTML works exactly as intended.
+My first layer consists of only HTML. Not that pretty - but completely functional!
 
 </br>
 
@@ -215,7 +239,7 @@ I started my app by writing semantic HTML, making the website's core as user fri
 </br>
 
 #### CSS
-Next, I added my CSS. I gave each course their own 'page' to make the survey progressively disclosed and easier to fill out, because the user needs to only focus on one course at a time. The navigation for this layout is HTML & CSS only, so it doesn't need any JavaScript to work. I did this, so the user has the most optimal layout, even if they may have JavaScript turned off. Another enhancement that gets enabled once CSS does, is a progress bar being shown to the user on each page as well.
+My second layer is my CSS. Once CSS is enabled, each course gets their own 'page' and the progress bar is shown to the user.
 
 </br>
 
@@ -240,7 +264,7 @@ Next, I added my CSS. I gave each course their own 'page' to make the survey pro
 </br>
 
 #### JavaScript
-Last but definitely not least - JavaScript. This layer is meant to really enhance the overall user experience. When JavaScript in enabled, the user input is stored in localStorage, so they can close the window and return to the survey later. Another features that works once JavaScript is enabled, is form validation. The form validations works together with the CSS, by checking if the user has entered something inside an input field and adding the correct class to that input field once they leave that field.
+My final layer is my JavaScript. Once JavaScript is enabled, user input is saved in localStorage and form validation starts to work.
 
 </br>
 
@@ -266,8 +290,54 @@ Last but definitely not least - JavaScript. This layer is meant to really enhanc
 <br/>
 
 ### :red_circle: Error testing
+To see what would happen if someone had localStorage turned off, I did an extra test round.  
+
+First, I made a typo in ```localStorage.setItem```, so nothing would be able to get stored. My test showed that everything else still works as normal, except for the localStorage.
+![setItem_off](https://user-images.githubusercontent.com/57795294/113145183-6c6a7880-922e-11eb-8cba-0e58458df864.gif)
+
+</br>
+
+For my second test, I made a typo in ```localStorage.getItem```, so I would be able to get my input values, but they would be stored.. I thought. My test showed otherwise! My input vulues didn't get stored at all, so there wasn't even anything to **get** to begin with.
+![getItem_off](https://user-images.githubusercontent.com/57795294/113145185-6d030f00-922e-11eb-811d-0b9a788eb0b3.gif)
 
 <br/>
+
+### :heavy_exclamation_mark: Error prevention
+What I could've done better here, is to implement feature detection.  
+
+</br>
+
+One way to implement feature detection, is to use the lines of code below. This is a good option, but I persoanlly prefer the other method below.
+```
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage
+} else {
+  // Sorry! No Web Storage support..
+}
+```
+
+</br>
+
+The type of feature detection shown below is the one I personally prefer, because you ```try``` your regular code and ```catch``` whatever errors may occur during the try. In the catch, I could tell the user that their answers won't be saved if they leave, because they don't have localStorage available.
+
+```
+const populateValues = () => {
+    
+  const inputs = document.querySelectorAll('input');
+
+  inputs.forEach(input => {
+    try {
+    const item = localStorage.getItem(input.name)
+    if (item) input.value = item;
+
+    } catch {
+        console.log('localStorage is not available')
+    }
+}
+```
+
+
+
 
 ---
 
@@ -289,7 +359,9 @@ Last but definitely not least - JavaScript. This layer is meant to really enhanc
 
 <!-------------------------- New Paragraph -------------------------->
 
-## :pizza::ramen: Take aways for my next project
+## :pizza: Take aways for my next project
+
+- Use feature detection to make sure all my code always works the way I intended it to
 
 <br/>
 
