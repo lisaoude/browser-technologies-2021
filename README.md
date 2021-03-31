@@ -60,7 +60,7 @@ I have added the following features & enhancements to my website:
 
 <!-------------------------- New Paragraph -------------------------->
 
-## TBD: NPM install progressive-enhancement
+## TBD: npm install progressive-enhancement
 (layers)
 
 <br/>
