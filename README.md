@@ -19,7 +19,23 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 <!-------------------------- New Paragraph -------------------------->
 
-## TBD: Case description
+## :pencil2: Case description
+### User wants & needs
+> I want to fill out a survey about the minor Web Design & Development, with different answering options. If I can't finish the survey in one sitting, I want to be able to continue where I left off before at a different moment.
+
+### Requirements
+The survey must contain (the options to fill out) the following:
+- Students' information (naam & number)
+- For each course:
+  - Name of the course
+  - Teacher who taught the course
+  - Weeks in which the course was followed
+  - General rating from 1 tot 10
+  - Question about course materials
+  - Question about explanation during the course
+  - Question about how good the student understands the course materials now
+- Form validation
+- Local storage
 
 <br/>
 
