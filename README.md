@@ -19,6 +19,14 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 <!-------------------------- New Paragraph -------------------------->
 
+## TBD: Case description
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
 ## :interrobang: What does this Web App do?
 
 - Allow the user to fill out a survey, whether they have CSS and JS turned on or off
@@ -52,7 +60,16 @@ I have added the following features & enhancements to my website:
 
 <!-------------------------- New Paragraph -------------------------->
 
-## :mag: Testing & Layers
+## TBD: NPM install progressive-enhancement
+(layers)
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :mag: Testing
 
 ### :globe_with_meridians: Browsers
 I tested my website in the following browsers:
@@ -93,7 +110,7 @@ Another example is the extra line of code that I added in order to remove the de
 
 </br>
 
-### Accessibility
+### :crown: Accessibility
 During development, I used Chrome Lighthouse to check how my Accessibility & Best Practices were looking. The only accessibility issues Lighthouse is able to find, is that I use multiple h3's in my form (as a heading for my section with three radio buttons). I'll take it!  
 
 ![image](https://user-images.githubusercontent.com/57795294/113069165-06dfa300-91c0-11eb-9695-61160a853ed7.png)
