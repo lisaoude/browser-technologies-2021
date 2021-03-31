@@ -48,6 +48,8 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 ### :princess: User wants & needs
 > I want to fill out a survey about the minor Web Design & Development, with different answering options. If I can't finish the survey in one sitting, I want to be able to continue where I left off before at a different moment.
 
+</br>
+
 ### :memo: Requirements
 The survey must contain (the options to fill out) the following:
 - Students' information (name & number)
@@ -126,10 +128,12 @@ I tested my website in the following browsers:
 - iOS: Safari
 - Android: Chrome
 
+</br>
 
 ### :hocho: Cutting the mustard
 I draw the line at browsers that don't support JS ES6, which is Internet Explorer and browsers older than 2015. Using ```let``` and ```const``` results in more strict and clean code and the use of arrow functions, which makes the code much more readable.
 
+</br>
 
 ### :computer: What did I do in my code?
 Before using a CSS selector, I checked [caniuse.com](www.caniuse.com) to see if the variable I was planning on using was supported by the browsers I'm testing my website in. To make sure that all my styling and added features worked in all browsers named above, I added some fallbacks or extra lines of code.  
@@ -177,8 +181,12 @@ I also chose to give my background a gradient (with a fallback), but keep the ac
 ### :zap: Layers
 In order to write a progressively enhanced website, you write your code in three layers: first comes HTML, secondly you add a layer of CSS to that and lastly you enhance the experience with a layer of JavaScript.  
 
+</br>
+
 #### Core
 By rendering my HTML server-side, I am able to save all user input to a database. This makes it a core functionality which always works.
+
+</br>
 
 #### HTML
 I started my app by writing semantic HTML, making the website's core as user friendly as possibly can be achieved with only HTML. I tested this HTML in my four browsers. In all four of the browsers, the HTML works exactly as intended.
