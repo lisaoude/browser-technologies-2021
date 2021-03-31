@@ -6,27 +6,42 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 ## :pushpin: Table of Contents
 
-- [Case description](#pencil2-Case-description)
-- [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
-- [Features & Enhancements](#gem-Features-&-Enhancements)
-- [Testing & Layers](#mag-Testing-&-Layers)
-- [Install](#inbox_tray-Install)
-- [License](#closed_lock_with_key-License)
-- [Sources](#books-Sources)
+- :pencil2: [Case description](#pencil2-Case-description)
+  - :princess: [User wants & needs](#User-wants-&-needs)
+  - :memo: [Requirements](#Requirements)
+- :interrobang: [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
+- :rainbow: [Live link](#rainbow-Live-link)
+- :gem: [Features & Enhancements](#gem-Features-&-Enhancements)
+- :electric_plug: [npm install progressive-enhancement](#electric_plug-npm-install-progressive-enhancement)
+- :mag: [Testing](#mag-Testing)
+  - :globe_with_meridians: [Browsers](#globe_with_meridians-Browsers)
+  - :hocho: [Cutting the Mustard](#hocho-Cutting-the-mustard)
+  - :computer: [What did I do in my code?](#computer-What-did-I-do-in-my-code?)
+  - :crown: [Accessibility](#crown-Accessibility)
+  - :zap: [Layers](#zap-Layers)
+  -:red_circle: [Error testing](#red_circle-Error-testing)
+- :wavy_dash: [Flow](#wavy_dash-Flow)
+- :telescope: [Next steps for this project](#telescope-Next-steps-for-this-project)
+- :pizza::ramen: [Take aways for my next project](#pizza-ramen-Take-aways-for-my-next-project)
+- :inbox_tray: [Install](#inbox_tray-Install)
+- :closed_lock_with_key: [License](#closed_lock_with_key-License)
+- :books: [Sources](#books-Sources)
 
 <br/>
 
 ---
 
+
+
 <!-------------------------- New Paragraph -------------------------->
 
 ## :pencil2: Case description
-### User wants & needs
+### :princess: User wants & needs
 > I want to fill out a survey about the minor Web Design & Development, with different answering options. If I can't finish the survey in one sitting, I want to be able to continue where I left off before at a different moment.
 
-### Requirements
+### :memo: Requirements
 The survey must contain (the options to fill out) the following:
-- Students' information (naam & number)
+- Students' information (name & number)
 - For each course:
   - Name of the course
   - Teacher who taught the course
@@ -51,7 +66,15 @@ The survey must contain (the options to fill out) the following:
 - Save the user input to a database
 - Show the user input on a results page ('admin')  
 
-**[My work can be viewed right here](https://enquete-bt.herokuapp.com/)**
+<br/> 
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :rainbow: Live link
+
+[My work can be viewed right here](https://enquete-bt.herokuapp.com/)
 
 <br/> 
 
@@ -77,7 +100,7 @@ I have added the following features & enhancements to my website:
 
 <!-------------------------- New Paragraph -------------------------->
 
-## TBD: npm install progressive-enhancement
+## :electric_plug: npm install progressive-enhancement
 (layers)
 
 <br/>
@@ -100,11 +123,11 @@ I draw the line at browsers that don't support JS ES6, which is Internet Explore
 
 
 ### :computer: What did I do in my code?
-Before using a CSS variable, I checked [caniuse.com](www.caniuse.com) to see if the variable I was planning on using was supported by the browsers I'm testing my website in. To make sure that all my styling and added features worked in all browsers named above, I added some fallbacks or extra lines of code.  
+Before using a CSS selector, I checked [caniuse.com](www.caniuse.com) to see if the variable I was planning on using was supported by the browsers I'm testing my website in. To make sure that all my styling and added features worked in all browsers named above, I added some fallbacks or extra lines of code.  
 
 </br>
 
-An example of this, is the lines of code below. I used this ```.valid``` class in my JavaScript to give correctly filled out input fields a box shadow. Safari doesn't understand the regular ```box-shadow```, so I added in the two lines of code below. First, I set the ```-webkit-appearance``` to none, to get rid of any styling to browser may add by default. Next, I put ```-webkit-``` before my original code in order to get the box-shadow to work in Safari as well.
+An example of this, is the lines of code below. I used this ```.valid``` class in my JavaScript to give correctly filled out input fields a box shadow. Safari doesn't understand the regular ```box-shadow```, so I added in the two lines of code at the bottom. First, I set the ```-webkit-appearance``` to none, to get rid of any styling to browser may add by default. Next, I put ```-webkit-``` before my original code in order to get the box-shadow to work in Safari as well.
 
 ```
 .valid {
@@ -225,15 +248,36 @@ Last but definitely not least - JavaScript. This layer is meant to really enhanc
 
 <br/>
 
----
-
-<!-------------------------- New Paragraph -------------------------->
-
-## TBD: Flow
+### :red_circle: Error testing
 
 <br/>
 
 ---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :wavy_dash: Flow
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :telescope: Next steps for this project
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :pizza::ramen: Take aways for my next project
+
+<br/>
+
+---
+
 
 <!-------------------------- New Paragraph -------------------------->
 
