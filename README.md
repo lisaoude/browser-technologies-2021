@@ -95,8 +95,8 @@ I tested my website in the following browsers:
 - Android: Chrome
 
 
-<!-- ### :hocho: Cutting the mustard
-I draw the line at browsers that don't support JS ES6, which is Internet Explorer and browsers older than 2015. Using ```let``` and ```const``` results in more strict and clean code and the use of arrow functions, which makes the code much more readable. -->
+### :hocho: Cutting the mustard
+I draw the line at browsers that don't support JS ES6, which is Internet Explorer and browsers older than 2015. Using ```let``` and ```const``` results in more strict and clean code and the use of arrow functions, which makes the code much more readable.
 
 
 ### :computer: What did I do in my code?
