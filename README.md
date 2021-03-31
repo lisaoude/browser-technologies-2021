@@ -6,6 +6,7 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 ## :pushpin: Table of Contents
 
+- [Case description](#pencil2-Case-description)
 - [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
 - [Features & Enhancements](#gem-Features-&-Enhancements)
 - [Testing & Layers](#mag-Testing-&-Layers)
