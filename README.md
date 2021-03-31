@@ -6,26 +6,35 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 
 ## :pushpin: Table of Contents
 
-- :pencil2: [Case description](#pencil2-Case-description)
-  - :princess: [User wants & needs](#User-wants-&-needs)
-  - :memo: [Requirements](#Requirements)
-- :interrobang: [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
-- :rainbow: [Live link](#rainbow-Live-link)
-- :gem: [Features & Enhancements](#gem-Features-&-Enhancements)
-- :electric_plug: [npm install progressive-enhancement](#electric_plug-npm-install-progressive-enhancement)
-- :mag: [Testing](#mag-Testing)
-  - :globe_with_meridians: [Browsers](#globe_with_meridians-Browsers)
-  - :hocho: [Cutting the Mustard](#hocho-Cutting-the-mustard)
-  - :computer: [What did I do in my code?](#computer-What-did-I-do-in-my-code?)
-  - :crown: [Accessibility](#crown-Accessibility)
-  - :zap: [Layers](#zap-Layers)
-  -:red_circle: [Error testing](#red_circle-Error-testing)
-- :wavy_dash: [Flow](#wavy_dash-Flow)
-- :telescope: [Next steps for this project](#telescope-Next-steps-for-this-project)
-- :pizza::ramen: [Take aways for my next project](#pizza-ramen-Take-aways-for-my-next-project)
-- :inbox_tray: [Install](#inbox_tray-Install)
-- :closed_lock_with_key: [License](#closed_lock_with_key-License)
-- :books: [Sources](#books-Sources)
+- [Case description](#pencil2-Case-description)
+  - [User wants & needs](#User-wants-&-needs)
+  - [Requirements](#Requirements)
+
+</br>
+
+- [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
+- [Live link](#rainbow-Live-link)
+- [Features & Enhancements](#gem-Features-&-Enhancements)
+- [npm install progressive-enhancement](#electric_plug-npm-install-progressive-enhancement)
+
+</br>
+
+- [Testing](#mag-Testing)
+  - [Browsers](#globe_with_meridians-Browsers)
+  - [Cutting the Mustard](#hocho-Cutting-the-mustard)
+  - [What did I do in my code?](#computer-What-did-I-do-in-my-code?)
+  - [Accessibility](#crown-Accessibility)
+  - [Layers](#zap-Layers)
+  - [Error testing](#red_circle-Error-testing)
+
+</br>
+
+- [Flow](#wavy_dash-Flow)
+- [Next steps for this project](#telescope-Next-steps-for-this-project)
+- [Take aways for my next project](#pizza-ramen-Take-aways-for-my-next-project)
+- [Install](#inbox_tray-Install)
+- [License](#closed_lock_with_key-License)
+- [Sources](#books-Sources)
 
 <br/>
 
