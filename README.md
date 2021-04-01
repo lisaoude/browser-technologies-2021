@@ -15,6 +15,7 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 - [What does this Web App do?](#interrobang-What-does-this-Web-App-do?)
 - [Live link](#rainbow-Live-link)
 - [Features & Enhancements](#gem-Features-&-Enhancements)
+- [What even is Progressive Enhancement?](#dizzy_face-What-even-IS-Progressive-Enhancement?)
 - [npm install progressive-enhancement](#electric_plug-npm-install-progressive-enhancement)
 
 </br>
@@ -31,9 +32,9 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 </br>
 
 - [Flow](#wavy_dash-Flow)
+- [Install](#inbox_tray-Install)
 - [Next steps for this project](#telescope-Next-steps-for-this-project)
 - [Take aways for my next project](#pizza-Take-aways-for-my-next-project)
-- [Install](#inbox_tray-Install)
 - [License](#closed_lock_with_key-License)
 - [Sources](#books-Sources)
 
@@ -52,6 +53,8 @@ _Made for Browser Technologies @ cmda-minor-web 2020 - 2021_
 </br>
 
 ### :memo: Requirements
+Most importantly, the survey needs to be built in a progressively enhanced way.
+
 The survey must contain (the options to fill out) the following:
 - Students' information (name & number)
 - For each course:
@@ -62,8 +65,8 @@ The survey must contain (the options to fill out) the following:
   - Question about course materials
   - Question about explanation during the course
   - Question about how good the student understands the course materials now
-- Form validation
-- Local storage
+- A type of form validation
+- The possibility to finish the survey later and pick up where the user left off
 
 <br/>
 
@@ -109,6 +112,36 @@ I have added the following features & enhancements to my website:
 <br/>
 
 ---
+<!-------------------------- New Paragraph -------------------------->
+
+## :dizzy_face: What even IS Progressive Enhancement?
+Progressive enhancement is the technique that primarily focuses on content and structure. Applying progressive enhancement ensures that the website is accessible to everyone. This means that everyone can always still use the main functionalities on the website.
+
+First of all, only HTML is shown to the user, so that only the main functionalities are available on the website. The website is now purely functional, without any other additions.
+
+Then a layer of CSS is added, making the website way more usable and user friendly. This way the layout can become clearer and it becomes more attractive.
+
+Finally, there is a layer of JavaScript on top. This layer ensures that the website is pleasant to use.
+According to [Aarron Walter](https://alistapart.com/article/understandingprogressiveenhancement/), this improves the user experience per layer.
+
+<br/>
+
+### :cake: Progressive Enhancement as a metaphor
+
+![progressive_enhancement_cake](https://user-images.githubusercontent.com/57795294/110634697-8aead000-81aa-11eb-96e5-23830ad017a5.png)
+
+You can think of progressive enhancement as a cake.  
+We start with a normal, regular piece of cake. We can see this basis as the content, which consists of semantic HTML code. By using semantic code, we ensure that every user can properly access and use the content. This base is also the largest and most important piece of the cake.
+
+Then we add a layer of icing to it. This layer improves the look and taste of the cake. We can see this addition as the CSS, which ensures that the content is displayed in a clear, pleasant way.
+
+Finally, we add decoration to our cake. This decoration provides the best experience for the user: a REAL piece of cake. We can think of this decoration as the JavaScript.
+
+Without the icing and decorations, the cake can still be eaten, but this addition improves the user experience. This is progressive enchancement.
+
+---
+
+</br>
 
 <!-------------------------- New Paragraph -------------------------->
 
@@ -117,7 +150,8 @@ I have added the following features & enhancements to my website:
 npm install progressive-enhancement
 ```  
 
-If only it were that easy.. I'm sure many developers would love for this to be an installable package, but for now we have to actually use our own brains to figure it out :brain::wrench:. It hurts..  
+If only it were that easy.. I'm sure many developers would love for this to be an installable package, but for now we have to actually use our own brains to figure it out.  
+:brain::wrench:. It hurts.
 
 </br>
 
@@ -136,7 +170,7 @@ Next, I added my CSS. I gave each course their own 'page' to make the survey pro
 </br>
 
 #### JavaScript
-Last but definitely not least - JavaScript. This layer is meant to really enhance the overall user experience. When JavaScript in enabled, the user input is stored in localStorage, so they can close the window and return to the survey later. Another features that works once JavaScript is enabled, is form validation. The form validations works together with the CSS, by checking if the user has entered something inside an input field and adding the correct class to that input field once they leave that field.
+Last but definitely not least - JavaScript. This layer is meant to really enhance the overall user experience. When JavaScript in enabled, the user input is stored in localStorage, so they can close the window and return to the survey later. Another feature that works once JavaScript is enabled, is form validation. The form validation works together with the CSS, by checking if the user has entered something inside an input field and adding the correct class to that input field once they leave that field.
 
 </br>
 
@@ -155,7 +189,7 @@ I tested my website in the following browsers:
 </br>
 
 ### :hocho: Cutting the mustard
-I draw the line at browsers that don't support JS ES6, which is Internet Explorer and browsers older than 2015. Using ```let``` and ```const``` results in more strict and clean code and the use of arrow functions, which makes the code much more readable.
+I draw the line at browsers that don't support JS ES6, which are basically all browser versions that were launced before 2015 (and Internet Explorer, duh). Using ```let``` and ```const``` results in more strict and clean code and allows the use of arrow functions, which makes the code much more readable.
 
 </br>
 
@@ -292,12 +326,12 @@ My final layer is my JavaScript. Once JavaScript is enabled, user input is saved
 ### :red_circle: Error testing
 To see what would happen if someone had localStorage turned off, I did an extra test round.  
 
-First, I made a typo in ```localStorage.setItem```, so nothing would be able to get stored. My test showed that everything else still works as normal, except for the localStorage.
+First, I made a typo in ```localStorage.setItem```, so nothing would be able to get stored. My test showed that everything else still works as normal, except for the localStorage.  
 ![setItem_off](https://user-images.githubusercontent.com/57795294/113145183-6c6a7880-922e-11eb-8cba-0e58458df864.gif)
 
 </br>
 
-For my second test, I made a typo in ```localStorage.getItem```, so I would be able to get my input values, but they would be stored.. I thought. My test showed otherwise! My input vulues didn't get stored at all, so there wasn't even anything to **get** to begin with.
+For my second test, I made a typo in ```localStorage.getItem```, so I would be able to get my input values, but they would be stored.. I thought. My test showed otherwise! My input values didn't get stored at all, so there wasn't even anything to **get** to begin with.  
 ![getItem_off](https://user-images.githubusercontent.com/57795294/113145185-6d030f00-922e-11eb-811d-0b9a788eb0b3.gif)
 
 <br/>
@@ -345,23 +379,8 @@ const populateValues = () => {
 
 ## :wavy_dash: Flow
 
-<br/>
+![wdd_flow](https://user-images.githubusercontent.com/57795294/113281347-b5313880-92e5-11eb-91f5-cc716476cd3e.png)
 
----
-
-<!-------------------------- New Paragraph -------------------------->
-
-## :telescope: Next steps for this project
-
-<br/>
-
----
-
-<!-------------------------- New Paragraph -------------------------->
-
-## :pizza: Take aways for my next project
-
-- Use feature detection to make sure all my code always works the way I intended it to
 
 <br/>
 
@@ -417,6 +436,32 @@ https://localhost:3000/
 
 <!-------------------------- New Paragraph -------------------------->
 
+## :telescope: Next steps for this project
+- Automatically save the user input (no button press needed)
+- Save each filled out course part of the form to the database instead of just at the end
+- Expand form validation so buttons 'active' once that section of the form is filled out
+- Make the title of the course sticky, so it's always visible, even if the user scrolls down
+- Also make the corresponding progress bar sticky, so it's always visible 
+- Add a slider to replace input type number once CSS & JS are both enabled
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
+## :pizza: Take aways for my next project
+
+- Use feature detection to make sure all my code always works the way I intended it to
+- Write more re-usable JavaScript code like I learned to do during this course 
+- Implemented more progressive enhancement 
+
+<br/>
+
+---
+
+<!-------------------------- New Paragraph -------------------------->
+
 ## :closed_lock_with_key: License
 
 This repository is licensed as [MIT](https://github.com/lisaoude/browser-technologies-2021/blob/master/LICENSE) by © Lisa Oude Elferink, 2021
@@ -433,6 +478,9 @@ This repository is licensed as [MIT](https://github.com/lisaoude/browser-technol
 - Ian Schoonover. (2020, June 27). How to Install Node JS on Windows 10. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/watch?v=AuCuHvgOeBY)
 - Installing Express. (2021). Retrieved March 8, 2021, from [Expressjs.com](http://expressjs.com/en/starter/installing.html)
 - The Net Ninja. (2020).  Node.js Crash Course Tutorial. Retrieved March 8, 2021, from [YouTube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
+- Gustafson, A. (2008, October 7). Understanding Progressive Enhancement. Retrieved March 10, 2021, van [Alistapart.com](https://alistapart.com/article/understandingprogressiveenhancement/)
+- Matuzo. (2020, April 28). The beauty of Progressive Enhancement. Retrieved March 10, 2021, van [Matuzo.at](https://www.matuzo.at/blog/beauty-of-progressive-enhancement/)
+- NN Group. (2017, March 5). A Theory of User Delight: Why Usability Is the Foundation for Delightful Experiences. Retrieved March 10, 2021, van [NNgroup.com](https://www.nngroup.com/articles/theory-user-delight/)
 - npm: ejs. (2021, February 6). Retrieved March 9, 2021, from [NPMjs.com](https://www.npmjs.com/package/ejs)
 - Web Dev Simplified. (2019, June 18). JavaScript Form Validation. Retrieved March 24, 2021, from [YouTube](https://www.youtube.com/watch?v=In0nB0ABaUk&t=307s)
 - Thomas Bradley. (2015, September 5). Progressive enhancement: cutting the mustard. Retrieved March 24, 2021, from [YouTube](https://www.youtube.com/watch?v=zbMJtxDD-4I)
