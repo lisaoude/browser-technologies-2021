@@ -397,7 +397,7 @@ Before we can get started, we'll need to clone this repo.
 This can be done by typing the following line of code into your terminal:
 
 ```
-git clone https://github.com/lisaoude/gifinder-pwa.git
+git clone https://github.com/lisaoude/wdd-enquete.git
 ```
 
 <br/>
